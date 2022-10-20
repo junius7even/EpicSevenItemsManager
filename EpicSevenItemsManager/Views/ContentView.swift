@@ -19,7 +19,7 @@ struct ContentView: View {
     @State var currentItem: String = "none"
     @State var currentPageSelection: String = "none"
     
-    @State var heroArray: [String] = [Strings.aria, Strings.alencia, Strings.baiken, Strings.basar, Strings.bellona, Strings.bombModelKanna, Strings.cecilia, Strings.ambitiousTywin, Strings.belian, Strings.commanderPavel, Strings.spiritEyeCeline, Strings.apocalypseRavi, Strings.arbiterVildred, Strings.bloodMoonHaste, Strings.briarWitchIseria]
+    @State var heroArray: [String] = [Strings.aria, Strings.cerise, Strings.alencia, Strings.baiken, Strings.basar, Strings.bellona, Strings.celine, Strings.charles, Strings.bombModelKanna, Strings.cecilia, Strings.cermia, Strings.ambitiousTywin, Strings.belian, Strings.commanderPavel, Strings.spiritEyeCeline, Strings.apocalypseRavi, Strings.arbiterVildred, Strings.bloodMoonHaste, Strings.briarWitchIseria]
 //    @State var heroArray: [String] = ["Apocalypse-Ravi", "Spirit-Eye-Celine", "Straze", "Celine", "Summertime-Iseria", "Ran", "Belian", "Operator-Sigret"]
     @State var isPresented: Bool = false
     @State private var screenSelection: Int? = 0

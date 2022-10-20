@@ -33,6 +33,14 @@ public enum Strings {
     public static let deliveranceDescirption = "Attacks with a spear, with a 35% chance to decrease Defense for 2 turns. When the target is inflicted with decreased Attack, effect chance increases by 25%. Damage dealt increases proportional to the caster's max Health."
     public static let steelCloudburstDescription = "Attacks all enemies with a magical spear, with an 85% chance to decrease Attack for 2 turns, before dispelling one buff. Damage dealt increases proportional to the caster's max Health."
     public static let ruinousRetributionDescription = "Attacks all enemies with a spear infused with dark energy, with a 85% chance to provoke for 1 turn, before granting immunity to all allies for 2 turns and a barrier to the caster for 2 turns. Damage dealt and barrier strength increases proportional to the caster's max Health."
+    // Cermia
+    public static let cermia = "Cermia"
+    public static let playingWithFire = "Playing-with-Fire"
+    public static let hotStreak = "Hot-Streak!"
+    public static let allIn = "All^In"
+    public static let playingWithFireDescription = "Attacks with a flaming sword, with a 55% chance to make the target unhealable for 1 turn."
+    public static let hotStreakDescription = "Shoots fire, granting the caster Increase Attack (Greater), resetting the cooldown of All-In!, and granting an extra turn."
+    public static let allInDescription = "Attacks with a blazing inferno, penetrating Defense by 50%."
     
     // MARK: 5 Star Ice Heros
     
@@ -44,6 +52,15 @@ public enum Strings {
     public static let shadowCallDescription = "Attacks two enemies with shadows, with a 40% chance to decrease Hit Chance for 1 turn. When it is not the caster's turn, increases the effect chance by 20%. Damage dealt increases proportional to the caster's Defense."
     public static let guideOfDarknessDescription = "Increases Critical Hit Chance by 20%. After using a skill, when Focus is full, consumes all Focus to activate Dark Shadow Phantom. Dark Shadow Phantom: Attacks all enemies, dispelling two buffs and decreasing Combat Readiness by 30%. Damage dealt increases proportional to the caster's Defense."
     public static let theUmbralHourDescription = "Using the power of the shadows, increases Defense of the caster and adopts a counterattacking stance for 2 turns. Grant stealth and a barrier to all allies except for the caster for 2 turns. Barrier strength increases proportional to the caster's Defense."
+    
+    // Cerise
+    public static let cerise = "Cerise"
+    public static let mysticalArrow = "Mystical-Arrow"
+    public static let luminousExplosion = "Luminous-Explosion"
+    public static let frostStorm = "Frost-Storm"
+    public static let mysticalArrowDescription = "Summons a mystical bow to attack the enemy, before increasing the caster's Combat Readiness by 10%. Triggers a Dual Attack from a random ally when Frost Storm is on cooldown."
+    public static let luminousExplosionDescription = "Explodes a magical sphere, stunning for 1 turn and making them unable to be buffed for 2 turns. Increases Combat Readiness of the caster by 50%."
+    public static let frostStormDescription = "Attacks all enemies with a raging frost storm, decrease buff durations by 1 turn, with a 75% chance each to decrease Speed and restrict for 2 turns. Grants the caster invincibility for 1 turn.. Attacks using an advantageous element."
     
     // MARK: 5 Star Earth heros
     
@@ -90,6 +107,14 @@ public enum Strings {
     public static let uppercutDescription = "Attacks the enemy with a sheath. A critical hit will increase damage dealt."
     public static let intuitionDescription = "After an enemy uses a non-attack skill, dispels all debuffs from the caster and attacks a random enemy with Blink. Can be activated once every 2 turns. Blink - Cuts the enemy in the blink of an eye and increases Combat Readiness of the caster by 20%. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored."
     public static let thunderclapDescription = "Repeatedly slashes at the enemy before triggering an explosion, absorbing some of the damage dealt as Health. Increases Evasion and grants a barrier to the caster for 2 turns. Barrier strength increases proportional to the caster's Attack."
+    // Charles
+    public static let charles = "Charles"
+    public static let slash = "Slash"
+    public static let smash = "Smash"
+    public static let faithfulStrike = "Faithful-Strike"
+    public static let slashDescription = "Attacks with a giant sword, with a 50% chance to decrease Attack for 1 turn. After using this skill, has a 25% chance to activate Smash as an extra attack. Chance to activate Smash is doubled when the enemy is buffed."
+    public static let smashDescription = "Attacks the enemy repeatedly with a giant sword, with a 80% chance to dispel all buffs. Damage dealt increases proportional to number of buffs granted to the caster."
+    public static let faithfulStrikeDescription = "Attacks all enemies with a swordstorm, increases Attack of all allies for 2 turns. Additionally increases Defense of the caster for 2 turns. When there are three or fewer enemies, damage dealt increases as enemies become fewer."
     
     // MARK: 5 Star Light Heros
     

@@ -12,9 +12,11 @@ public struct Constants {
         // MARK: 5 Star Fire Heros
         Strings.bombModelKanna: HeroCollection.bombModelKanna,
         Strings.cecilia: HeroCollection.cecilia,
+        Strings.cermia: HeroCollection.cermia,
         
         // MARK: 5 Star ice heros
         Strings.aria: HeroCollection.aria,
+        Strings.cerise: HeroCollection.cerise,
         
         // MARK: 5 star earth heros
         Strings.alencia: HeroCollection.alencia,
@@ -22,6 +24,7 @@ public struct Constants {
         Strings.basar: HeroCollection.basar,
         Strings.bellona: HeroCollection.bellona,
         Strings.celine: HeroCollection.celine,
+        Strings.charles: HeroCollection.charles,
         
         // MARK: 5 star light heros
         Strings.ambitiousTywin: HeroCollection.ambitiousTywin,
