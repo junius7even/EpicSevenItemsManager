@@ -169,6 +169,44 @@ public enum SkillCollection {
             Strings.minusOneTurnCooldown
         ]
     )
+    // Choux
+    public static let chop = Skill(
+        skillName: Strings.chop,
+        description: Strings.chopDescription,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTwoPercentCombatReadiness,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusThreePercentCombatReadiness,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFifteenPercentDamageDealt
+        ],
+        soulBurnEffect: Strings.grantsExtraTurn,
+        requiredFullSouls: 2
+    )
+    public static let fwoooosh = Skill(
+        skillName: Strings.fwoooosh,
+        description: Strings.fwooooshDescription,
+        initialCooldown: 3,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusFifteenPercentDamageDealt
+        ]
+    )
+    public static let helpMeCream = Skill(
+        skillName: Strings.helpMeCream,
+        description: Strings.helpMeCreamDescription,
+        initialCooldown: 5,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.minusOneTurnCooldown,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ]
+    )
     
     // MARK: Earth 5 star heros
     // Alencia

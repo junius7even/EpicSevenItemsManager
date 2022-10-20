@@ -17,6 +17,7 @@ public struct Constants {
         // MARK: 5 Star ice heros
         Strings.aria: HeroCollection.aria,
         Strings.cerise: HeroCollection.cerise,
+        Strings.choux: HeroCollection.choux
         
         // MARK: 5 star earth heros
         Strings.alencia: HeroCollection.alencia,

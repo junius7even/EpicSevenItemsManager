@@ -52,7 +52,6 @@ public enum Strings {
     public static let shadowCallDescription = "Attacks two enemies with shadows, with a 40% chance to decrease Hit Chance for 1 turn. When it is not the caster's turn, increases the effect chance by 20%. Damage dealt increases proportional to the caster's Defense."
     public static let guideOfDarknessDescription = "Increases Critical Hit Chance by 20%. After using a skill, when Focus is full, consumes all Focus to activate Dark Shadow Phantom. Dark Shadow Phantom: Attacks all enemies, dispelling two buffs and decreasing Combat Readiness by 30%. Damage dealt increases proportional to the caster's Defense."
     public static let theUmbralHourDescription = "Using the power of the shadows, increases Defense of the caster and adopts a counterattacking stance for 2 turns. Grant stealth and a barrier to all allies except for the caster for 2 turns. Barrier strength increases proportional to the caster's Defense."
-    
     // Cerise
     public static let cerise = "Cerise"
     public static let mysticalArrow = "Mystical-Arrow"
@@ -61,6 +60,14 @@ public enum Strings {
     public static let mysticalArrowDescription = "Summons a mystical bow to attack the enemy, before increasing the caster's Combat Readiness by 10%. Triggers a Dual Attack from a random ally when Frost Storm is on cooldown."
     public static let luminousExplosionDescription = "Explodes a magical sphere, stunning for 1 turn and making them unable to be buffed for 2 turns. Increases Combat Readiness of the caster by 50%."
     public static let frostStormDescription = "Attacks all enemies with a raging frost storm, decrease buff durations by 1 turn, with a 75% chance each to decrease Speed and restrict for 2 turns. Grants the caster invincibility for 1 turn.. Attacks using an advantageous element."
+    // Choux
+    public static let choux = "Choux"
+    public static let chop = "Chop"
+    public static let fwoooosh = "Fwoooosh!"
+    public static let helpMeCream = "Help-Me,-Cream!"
+    public static let chopDescription = "Attacks the enemy with a spear before increasing the caster's Combat Readiness by 15%. A critical hit will double the amount of Focus gained. Damage dealt increases proportional to the caster's max health."
+    public static let fwooooshDescription = "Attacks the enemy by wildly swinging the spear and absorbs some of the damage dealt as Health. Penetrates the enemy's Defense by 70%. When the caster's stacked Focus is 5, consumes all Focus, increasing damage dealt and resetting the cooldown of Fwooosh! Damage dealt increases proportional to the caster's max health."
+    public static let helpMeCreamDescription = "Freezes all enemies before attacking with Cream. Increases Critical Hit Resistance of all allies for 2 turns and grants the caster immunity for 2 turns. Damage dealt increases proportional to the caster's max Health. When this skill is unavailable due to cooldown reset, after an ally is attacked, has a 20% chance to counterattack."
     
     // MARK: 5 Star Earth heros
     

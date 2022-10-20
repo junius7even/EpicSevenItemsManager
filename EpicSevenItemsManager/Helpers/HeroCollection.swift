@@ -12,9 +12,12 @@ public enum HeroCollection {
     public static let bombModelKanna = Hero(name: Strings.bombModelKanna, starSign: StarSigns.gemini, heroClass: HeroClasses.ranger, element: Elements.fire, rarity: "5", skills: [SkillCollection.quickBombardment, SkillCollection.stanceShift, SkillCollection.fullBombardment])
     public static let cecilia = Hero(name: Strings.cecilia, starSign: StarSigns.aries, heroClass: HeroClasses.knight, element: Elements.fire, rarity: "5", skills: [SkillCollection.deliverance, SkillCollection.steelCloudburst, SkillCollection.ruinousRetribution])
     public static let cermia = Hero(name: Strings.cermia, starSign: StarSigns.leo, heroClass: HeroClasses.warrior, element: Elements.fire, rarity: "5", skills: [SkillCollection.playingWithFire, SkillCollection.hotStreak, SkillCollection.allIn])
+    
     // MARK: 5 Star Ice Heros
     public static let aria = Hero(name: Strings.aria, starSign: StarSigns.taurus, heroClass: HeroClasses.mage, element: Elements.ice, rarity: "5", skills: [SkillCollection.shadowCall, SkillCollection.guideOfDarkness, SkillCollection.theUmbralHour])
     public static let cerise = Hero(name: Strings.cerise, starSign: StarSigns.aquarius, heroClass: HeroClasses.ranger, element: Elements.ice, rarity: "5", skills: [SkillCollection.mysticalArrow, SkillCollection.luminousExplosion, SkillCollection.frostStorm])
+    public static let choux = Hero(name: Strings.choux, starSign: StarSigns.capricorn, heroClass: HeroClasses.warrior, element: Elements.ice, rarity: "5", skills: [SkillCollection.chop, SkillCollection.fwoooosh, SkillCollection.helpMeCream])
+    
     // MARK: 5 Star Earth Heros
     public static let alencia = Hero(name: Strings.alencia, starSign: StarSigns.cancer, heroClass: HeroClasses.warrior, element: Elements.earth, rarity: "5'", skills: [SkillCollection.eradicate, SkillCollection.nobleBlood, SkillCollection.genesis])
     public static let baiken = Hero(name: Strings.baiken, starSign: StarSigns.scorpio, heroClass: HeroClasses.thief, element: Elements.earth, rarity: "5", skills: [SkillCollection.tatamiGaeshi, SkillCollection.tsuraneSanzuWatashi, SkillCollection.garyoTensei])
