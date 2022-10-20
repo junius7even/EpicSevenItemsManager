@@ -201,6 +201,14 @@ public enum Strings {
     public static let fallenFlowerDescription = "Throws swords at the enemy, with a 65% chance to decrease Defense for 1 turn."
     public static let witchesCurseDescription = "Increases Hit Chance by 25%. A successful attack inflicts additional damage to the enemy. Additional damage increases proportional to the caster's Attack. Upon receiving lethal damage, grants Immortality to the caster for 1 turn. Immortality effect can only be activated once every 5 turns."
     public static let cursedThornDescription = "Attacks all enemies with a cursed thornbush, dispelling all buffs, with a 75% chance each to decrease Attack and make them unable to be buffed for 2 turns."
+    // Closer Charles
+    public static let closerCharles = "Closer-Charles"
+    public static let elimination = "Elimination"
+    public static let closer = "Closer"
+    public static let descent = "Descent"
+    public static let eliminationDescription = "Sharply cuts the enemy. When used on the caster's turn, if the caster is granted perception, uses Demolition instead of Elimination. Demolition: Attacks the enemy with a sword. Damage dealt increases proportional to the target's lost Health. When the enemy is defeated, decreases cooldown of Descent by 1 turn. This attack does not trigger a Dual Attack."
+    public static let closerDescription = "After an ally except for the caster attacks, if the enemy's Health is less than 30%, increases Combat Readiness of the caster by 35% and grants perception for 2 turns. Can only be activated once every 2 turns."
+    public static let descentDecsription = "Attacks all enemies after descending, increasing Attack of all allies for 2 turns before increasing Combat Readiness by 20%. Increases Evasion of the caster for 3 turns."
     
     // MARK: Common Soulburns
     // Extra turn

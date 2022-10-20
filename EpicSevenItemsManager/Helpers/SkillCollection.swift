@@ -810,5 +810,45 @@ public enum SkillCollection {
         soulBurnEffect: Strings.oneSoulIncreasesDamageDealt,
         requiredFullSouls: 1
     )
+    // Closer Charles
+    public static let elimination = Skill(
+        skillName: Strings.elimination,
+        description: Strings.eliminationDescription,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ]
+    )
+    public static let closer = Skill(
+        skillName: Strings.closer,
+        description: Strings.closerDescription,
+        initialEffectChance: 35,
+        skillEnhancementEffects: [
+            Strings.plusTwoPercentCombatReadiness,
+            Strings.plusTwoPercentCombatReadiness,
+            Strings.plusTwoPercentCombatReadiness,
+            Strings.plusThreePercentCombatReadiness,
+            Strings.plusThreePercentCombatReadiness,
+            Strings.plusFivePercentCombatReadiness
+        ],
+        skillType: Strings.passive
+    )
+    public static let descent = Skill(
+        skillName: Strings.descent,
+        description: Strings.descentDecsription,
+        initialCooldown: 5,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.minusOneTurnCooldown,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ],
+        soulBurnEffect: Strings.oneSoulIncreasesDamageDealt,
+        requiredFullSouls: 1
+    )
     
 }

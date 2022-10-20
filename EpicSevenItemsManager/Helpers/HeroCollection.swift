@@ -49,4 +49,5 @@ public enum HeroCollection {
     public static let arbiterVildred = Hero( name: Strings.arbiterVildred, starSign: StarSigns.leo, heroClass: HeroClasses.thief, element: Elements.dark, rarity: "5", skills: [SkillCollection.sweep, SkillCollection.darkContract, SkillCollection.darkBlade])
     public static let bloodMoonHaste = Hero(name: Strings.bloodMoonHaste, starSign: StarSigns.pisces, heroClass: HeroClasses.soulWeaver, element: Elements.dark, rarity: "5", skills: [SkillCollection.bloodScythe, SkillCollection.grudge, SkillCollection.moonSlash])
     public static let briarWitchIseria = Hero(name: Strings.briarWitchIseria, starSign: StarSigns.gemini, heroClass: HeroClasses.ranger, element: Elements.dark, rarity: "5", skills: [SkillCollection.fallenFlower, SkillCollection.witchesCurse, SkillCollection.cursedThorn])
+    public static let closerCharles = Hero(name: Strings.closerCharles, starSign: StarSigns.scorpio, heroClass: HeroClasses.thief, element: Elements.dark, rarity: "5", skills: [SkillCollection.elimination, SkillCollection.closer, SkillCollection.descent])
 }

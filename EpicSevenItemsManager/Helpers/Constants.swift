@@ -17,7 +17,7 @@ public struct Constants {
         // MARK: 5 Star ice heros
         Strings.aria: HeroCollection.aria,
         Strings.cerise: HeroCollection.cerise,
-        Strings.choux: HeroCollection.choux
+        Strings.choux: HeroCollection.choux,
         
         // MARK: 5 star earth heros
         Strings.alencia: HeroCollection.alencia,
@@ -37,7 +37,8 @@ public struct Constants {
         Strings.apocalypseRavi: HeroCollection.apocalypseRavi,
         Strings.arbiterVildred: HeroCollection.arbiterVildred,
         Strings.bloodMoonHaste: HeroCollection.bloodMoonHaste,
-        Strings.briarWitchIseria: HeroCollection.briarWitchIseria
+        Strings.briarWitchIseria: HeroCollection.briarWitchIseria,
+        Strings.closerCharles: HeroCollection.closerCharles
     ]
     // MARK: Epic Catalyst dictionary
     public static let epicCatalystDictionary: [String: String] = [
