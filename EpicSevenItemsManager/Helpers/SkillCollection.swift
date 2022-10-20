@@ -488,6 +488,47 @@ public enum SkillCollection {
         soulBurnEffect: Strings.extendsDurationOfBuffsByOneTurn,
         requiredFullSouls: 1
     )
+    // Laika
+    public static let supportingFire = Skill(
+        skillName: Strings.supportingFire,
+        description: Strings.supportingFireDescription,
+        initialEffectChance: 10,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTwoPercentCombatReadiness,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusThreePercentCombatReadiness,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ]
+    )
+    public static let strikeOrder = Skill(
+        skillName: Strings.strikeOrder,
+        description: Strings.strikeOrderDescription,
+        initialCooldown: 4,
+        initialEffectChance: 75,
+        skillEnhancementEffects: [
+            Strings.plusTenPercentEffectChance,
+            Strings.minusOneTurnCooldown,
+            Strings.plusFifteenPercentEffectChance
+        ]
+    )
+    public static let volleyFire = Skill(
+        skillName: Strings.volleyFire,
+        description: Strings.volleyFireDescription,
+        initialCooldown: 5,
+        initialEffectChance: 75,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTenPercentEffectChance,
+            Strings.minusOneTurnCooldown,
+            Strings.plusFifteenPercentEffectChance,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusFifteenPercentDamageDealt
+        ],
+        soulBurnEffect: Strings.minusTwoTurnCooldown,
+        requiredFullSouls: 1
+    )
     
     // MARK: Light 5 star heros
     
@@ -528,7 +569,9 @@ public enum SkillCollection {
             Strings.plusTenPercentEffectChance,
             Strings.plusFivePercentDamageDealt,
             Strings.plusFifteenPercentDamageDealt
-        ]
+        ],
+        soulBurnEffect: Strings.minusTwoTurnCooldown,
+        requiredFullSouls: 1
     )
     // Belian
     public static let lightOfDestruction = Skill(

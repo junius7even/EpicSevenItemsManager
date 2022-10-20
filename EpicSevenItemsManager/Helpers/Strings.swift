@@ -122,6 +122,14 @@ public enum Strings {
     public static let slashDescription = "Attacks with a giant sword, with a 50% chance to decrease Attack for 1 turn. After using this skill, has a 25% chance to activate Smash as an extra attack. Chance to activate Smash is doubled when the enemy is buffed."
     public static let smashDescription = "Attacks the enemy repeatedly with a giant sword, with a 80% chance to dispel all buffs. Damage dealt increases proportional to number of buffs granted to the caster."
     public static let faithfulStrikeDescription = "Attacks all enemies with a swordstorm, increases Attack of all allies for 2 turns. Additionally increases Defense of the caster for 2 turns. When there are three or fewer enemies, damage dealt increases as enemies become fewer."
+    // Laika
+    public static let laika = "Laika"
+    public static let supportingFire = "Supporting-Fire"
+    public static let strikeOrder = "Strike-Order"
+    public static let volleyFire = "Volley-Fire!"
+    public static let supportingFireDescription = "Attacks the enemy, increasing Combat Readiness of the caster and a random ally except for the caster by 10%."
+    public static let strikeOrderDescription = "Selects an enemy, with a 75% chance to target them for 2 turns. Increases Attack of the ally except for the caster with the highest Attack for 2 turns, and decreases skill cooldown by 1 turn, before triggering a Dual Attack."
+    public static let volleyFireDescription = "Shoots out all wings to attack all enemies, with a 75% to decrease Speed for 2 turns, and a 50% chance to put them to sleep for 1 turn, before granting Immunity to all allies for 2 turns."
     
     // MARK: 5 Star Light Heros
     
@@ -133,7 +141,6 @@ public enum Strings {
     public static let icySwordStormDescription = "Attacks with a sword, with a 60% chance to provoke for 1 turn. Removes 4 Souls from the opponent. Damage dealt increases proportional to the caster's max Health."
     public static let battleCommandDescription = "Has a 75% chance to dispel one debuff from all allies when an ally is debuffed after the caster is attacked. Can only activate once per turn."
     public static let flashDescription = "Attacks all enemies with an instant swordstorm, with a 65% chance each to to stun for 1 turn and decrease Speed for 2 turns. Damage dealt increases proportional to the caster's max Health."
-    public static let flashSoulburnDescription = "Skill cooldown is decreased by 2 turns. (-10 Souls)"
     
     // Belian
     public static let belian = "Belian"

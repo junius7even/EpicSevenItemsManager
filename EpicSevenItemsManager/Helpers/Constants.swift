@@ -26,6 +26,7 @@ public struct Constants {
         Strings.bellona: HeroCollection.bellona,
         Strings.celine: HeroCollection.celine,
         Strings.charles: HeroCollection.charles,
+        Strings.laika: HeroCollection.laika
         
         // MARK: 5 star light heros
         Strings.ambitiousTywin: HeroCollection.ambitiousTywin,
