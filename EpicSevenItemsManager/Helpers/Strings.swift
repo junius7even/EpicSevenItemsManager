@@ -116,6 +116,14 @@ public enum Strings {
     public static let starlightsWillDescription = "Attacks with the power of the stars, dispelling one debuff each from two allies."
     public static let guardiansAuthorityDescription = "Decreases the damage received from attacks that target all enemies by 15% and activates Consecrated Ground. When this effect is granted more than once, only the strongest effect is applied. Consecrated Ground can be activated once every 2 turns. Consecrated Ground: Recovers the Health of all allies before increasing Combat Readiness of the caster by 20%. Amount recovered increases proportional to the caster's max Health."
     public static let eternallyShiningCometDescription = "Attacks all enemies with a meteor shower, granting invincibility for 1 turn and increased Effect Resistance for 2 turns to all allies."
+    // Emilia
+    public static let emilia = "Emilia"
+    public static let huma = "Huma"
+    public static let spiritsBlessing = "Spirit's-Blessing"
+    public static let divineProtectionOfTheGreatSpirit = "Divine-Protection-of-the-Great-Spirit"
+    public static let humaDescription = "Attacks the enemy with ice, before recovering Health of the ally with the lowest Health. Amount recovered increases proportional to the caster's max Health."
+    public static let spiritsBlessingDescription = "Grants a blessing to an ally except for the caster, dispelling two debuffs and increasing Attack for 2 turns before increasing Combat Readiness by 40%. Increases Combat Readiness of the caster by 25%."
+    public static let divineProtectionOfTheGreatSpiritDescription = "Uses spiritual arts to dispel two debuffs from all allies, before recovering Health and granting a barrier for 2 turns. Amount recovered and barrier strength increase proportional to the caster's max Health."
     
     // MARK: 5 Star Earth heros
     
@@ -303,6 +311,12 @@ public enum Strings {
     public static let increasesAmountRecovered = "Increases the amount recovered. (-10 Souls)"
     public static let oneSoulIncreaseEffectChanceToHundredPercent = "Increases effect chance to 100%. (-10 Souls)"
     public static let dispelAllDebuffsFromAllies = "Dispels all debufss from all allies. (-20 Souls)"
+    // Recover target health
+    public static let recoverTargetHealth = "Recovers Health of the target. Amount recovered increases proportional to the caster's max Health. (-10 Souls)"
+    // Target's combat readiness
+    public static let plusOnePercentTargetsCombatReadiness = "+1% Target's Combat Readiness"
+    public static let plusTwoPercentTargetsCombatReadiness = "+2% Target's Combat Readiness"
+    public static let plusThreePercentTargetsCombatReadiness = "+3% Target's Combat Readiness"
     
     // MARK: enhancement effects
     // Damage dealt

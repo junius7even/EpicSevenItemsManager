@@ -445,6 +445,10 @@ public enum SkillCollection {
             Strings.plusFifteenPercentDamageDealt
         ]
     )
+    // Emilia
+    public static let huma = Skill(skillName: Strings.huma, description: Strings.humaDescription, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusTenPercentHealing, Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.plusFifteenPercentHealing, Strings.plusTenPercentDamageDealt, Strings.plusTenPercentDamageDealt])
+    public static let spiritsBlessing = Skill(skillName: Strings.spiritsBlessing, description: Strings.spiritsBlessingDescription, initialCooldown: 3, initialEffectChance: 40, skillEnhancementEffects: [Strings.plusOnePercentCombatReadiness, Strings.plusOnePercentCombatReadiness, Strings.plusOnePercentCombatReadiness, Strings.minusOneTurnCooldown, Strings.plusTwoPercentTargetsCombatReadiness, Strings.plusTwoPercentTargetsCombatReadiness, Strings.plusThreePercentCombatReadiness], soulBurnEffect: Strings.recoverTargetHealth, requiredFullSouls: 1)
+    public static let divineProtectionOfTheGreatSpirit = Skill(skillName: Strings.divineProtectionOfTheGreatSpirit, description: Strings.divineProtectionOfTheGreatSpiritDescription, initialCooldown: 5, skillEnhancementEffects: [Strings.minusOneTurnCooldown])
     
     // MARK: Earth 5 star heros
     // Alencia

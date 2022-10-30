@@ -24,6 +24,7 @@ public class Constants {
         Strings.dizzy: HeroCollection.dizzy,
         Strings.eda: HeroCollection.eda,
         Strings.elena: HeroCollection.elena,
+        Strings.emilia: HeroCollection.emilia,
         
         // MARK: 5 star earth heros
         Strings.alencia: HeroCollection.alencia,
