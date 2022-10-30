@@ -169,6 +169,14 @@ public enum Strings {
     public static let mightyStrikeDescription = "Attacks the enemy with a sheath. When this skill is used, if it was not triggered by a Dual Attack, has a 35% chance to use Nimble Sword instead of Mighty Strike. When the caster is possessed, effect chance is doubled. This skill does not trigger a Dual Attack. Nimble Sword: Dispels one debuff from the caster before swiftly attacking the enemy. Penetrates the target's Defense by 35%."
     public static let sixthSenseDecsription = "Damage suffered in one attack does not exceed 70% of max Health. Decreases skill cooldown by 1 turn when somebody dies, and acquires 5 Souls. Effects upon death are only activated once per turn, upon a Hero's death."
     public static let spiritGate_BurningPossessionDescription = "Opens the gate of the spirits, dispelling all debuffs from the caster and making the caster possessed for 3 turns. Revives all dead allies before granting immortality to all allies for 1 turn."
+    // Conqueror Lilias
+    public static let conquerorLilias = "Conqueror-Lilias"
+    public static let kneelDown = "Kneel-Down"
+    public static let cover = "Cover!"
+    public static let forHonor = "For-Honor!"
+    public static let kneelDownDescription = "Attacks the enemy with a sword, triggering a Dual Attack from a random ally."
+    public static let coverDescription = "Distracts the enemy, decreasing Combat Readiness by 25%, with up to a 70% chance to inflict redirected provoke for 1 turn. Grants a barrier to the caster and the ally except for the caster with the highest max Health for 2 turns. Barrier strength increases proportional to the ally's max Health."
+    public static let forHonorDescription = "Encourages the Perland Army, granting vigor to all allies for 2 turns. Decreases buff duration of all enemies by 1 turn and has a 75% chance to decrease Attack for 2 turns. Grants an extra turn to the caster."
     
     // MARK: 5 Star Dark Heros
     
@@ -225,6 +233,7 @@ public enum Strings {
     // Ignore effres
     public static let ignoresEffectResistance = "Ignores Effect Resistance"
     public static let minusTwoTurnCooldown = "Skill cooldown is decreased by 2 turns. (-10 Souls)"
+    public static let twoTurnRedirectedProvoke = "Inflicts Redirected Provoke for 2 turns."
     
     // MARK: enhancement effects
     // Damage dealt

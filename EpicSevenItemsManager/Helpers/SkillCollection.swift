@@ -691,6 +691,45 @@ public enum SkillCollection {
         skillEnhancementEffects: [Strings.minusOneTurnCooldown],
         skillType: Strings.active
     )
+    public static let kneelDown = Skill(
+        skillName: Strings.kneelDown,
+        description: Strings.kneelDownDescription,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ]
+    )
+    public static let cover = Skill(
+        skillName: Strings.cover,
+        description: Strings.coverDescription,
+        initialCooldown: 4,
+        initialEffectChance: 70,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentEffectChance,
+            Strings.plusFivePercentEffectChance,
+            Strings.minusTwoTurnCooldown,
+            Strings.plusFivePercentEffectChance,
+            Strings.plusFivePercentEffectChance,
+            Strings.plusTenPercentEffectChance
+        ],
+        soulBurnEffect: Strings.twoTurnRedirectedProvoke,
+        requiredFullSouls: 1
+    )
+    public static let forHonor = Skill(
+        skillName: Strings.forHonor,
+        description: Strings.forHonorDescription,
+        initialCooldown: 6,
+        initialEffectChance: 75,
+        skillEnhancementEffects: [
+            Strings.plusTenPercentEffectChance,
+            Strings.minusTwoTurnCooldown,
+            Strings.plusFifteenPercentEffectChance
+        ]
+    )
     
     // MARK: 5 star Dark Heros
     
