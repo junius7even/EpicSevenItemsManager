@@ -49,6 +49,14 @@ public enum Strings {
     public static let illTakeYouOnDescription = "Attacks the enemy with a transmuted blade, and grants a barrier to the caster for 1 turn. Damage dealt and barrier strength increase proportional to the caster's max Health."
     public static let equivalentExchangeDescription = "After being attacked, when the caster has a debuff, dispels one debuff and activates Rise!. Rise!: Attacks all enemies with ground thorns, dispelling one buff and inflicting a random debuff for 2 turns, before increasing Combat Readiness of the caster by 20%. Damage dealt increases proportional to the caster's max Health.\n(Random Debuff: Decreased Hit Chance, Decreased Attack, Provoke, Silence, Restrict)"
     public static let illShowYouOurDifferenceDescription = "Attacks the enemy together with Alphonse, and increases Combat Readiness of the caster by 50%. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored. Damage dealt increases proportional to the caster's max Health. Damage dealt increases every time this skill is used and can stack up to 3 times."
+    // Elphelt
+    public static let elphelt = "Elphelt"
+    public static let barrage = "Barrage"
+    public static let judgeBetterHalf = "Judge-Better-Half"
+    public static let magnumWedding = "Magnum-Wedding"
+    public static let barrageDescription = "Fires a barrage of bullets at the enemy, with a 65% chance to make them unable to be buffed for 1 turn."
+    public static let judgeBetterHalfDescription = "Traps the enemy in a cake, before attacking them with a cake-cutting blade and increasing Attack of all allies for 2 turns. When the enemy is asleep, decreases Defense of all enemies for 2 turns. Damage dealt increases proportional to the number of debuffs inflicted on the enemy."
+    public static let magnumWeddingDescription = "Dispels two buffs from the enemy before shooting a bullet of love, with a 75% chance to put them to sleep and decrease Defense for 2 turns. Grants the caster an extra turn."
     
     // MARK: 5 Star Ice Heros
     

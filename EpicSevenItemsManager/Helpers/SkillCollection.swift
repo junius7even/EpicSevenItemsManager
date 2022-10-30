@@ -167,6 +167,10 @@ public enum SkillCollection {
         soulBurnEffect: Strings.minusTwoTurnCooldown,
         requiredFullSouls: 1
     )
+    // Elphelt
+    public static let barrage = Skill(skillName: Strings.barrage, description: Strings.barrageDescription, initialEffectChance: 65, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.plusTenPercentEffectChance, Strings.plusTenPercentDamageDealt, Strings.plusTenPercentDamageDealt])
+    public static let judgeBetterHalf = Skill(skillName: Strings.judgeBetterHalf, description: Strings.judgeBetterHalfDescription, initialCooldown: 4, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.plusTenPercentDamageDealt])
+    public static let magnumWedding = Skill(skillName: Strings.magnumWedding, description: Strings.magnumWeddingDescription, initialCooldown: 5, initialEffectChance: 75, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusTenPercentEffectChance, Strings.minusOneTurnCooldown, Strings.plusFifteenPercentEffectChance, Strings.plusFifteenPercentDamageDealt], soulBurnEffect: Strings.ignoresEffectResistance, requiredFullSouls: 2)
     // MARK: Ice 5 star heros
     // Aria
     public static let shadowCall = Skill(
