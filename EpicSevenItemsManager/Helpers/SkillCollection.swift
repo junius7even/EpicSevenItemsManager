@@ -730,6 +730,45 @@ public enum SkillCollection {
             Strings.plusFifteenPercentEffectChance
         ]
     )
+    // Desert Jewel Basar
+    public static let desertWind = Skill(
+        skillName: Strings.desertWind,
+        description: Strings.desertWindDescription,
+        initialEffectChance: 35,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentEffectChance,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentEffectChance,
+            Strings.plusFifteenPercentDamageDealt
+        ],
+        soulBurnEffect: Strings.increasesAmountRecovered,
+        requiredFullSouls: 1)
+    public static let desertStorm = Skill(
+        skillName: Strings.desertStorm,
+        description: Strings.desertStormDescription,
+        initialCooldown: 4,
+        initialEffectChance: 85,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentEffectChance,
+            Strings.plusFivePercentEffectChance,
+            Strings.minusOneTurnCooldown,
+            Strings.plusFivePercentEffectChance,
+            Strings.plusTenPercentEffectChance
+        ]
+    )
+    public static let bastetRoar = Skill(
+        skillName: Strings.bastetRoar,
+        description: Strings.bastetRoarDescription,
+        initialCooldown: 5,
+        skillEnhancementEffects: [
+            Strings.plusTwoPercentCombatReadiness,
+            Strings.plusTwoPercentCombatReadiness,
+            Strings.minusOneTurnCooldown,
+            Strings.plusThreePercentCombatReadiness,
+            Strings.plusThreePercentCombatReadiness
+        ]
+    )
     
     // MARK: 5 star Dark Heros
     
@@ -931,6 +970,45 @@ public enum SkillCollection {
         ],
         soulBurnEffect: Strings.oneSoulIncreasesDamageDealt,
         requiredFullSouls: 1
+    )
+    // Designer Lilibet
+    public static let sliceToPieces = Skill(
+        skillName: Strings.sliceToPieces,
+        description: Strings.sliceToPiecesDescription,
+        initialEffectChance: 65,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTenPercentEffectChance,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ],
+        soulBurnEffect: Strings.oneSoulIncreaseEffectChanceToHundredPercent,
+        requiredFullSouls: 1
+    )
+    public static let emergencyStitching = Skill(
+        skillName: Strings.emergencyStitching,
+        description: Strings.emergencyStitchingDescription,
+        skillEnhancementEffects: [
+            Strings.plusThreeFightingSpiritAcquired,
+            Strings.plusFourFightingSpiritAcquired,
+            Strings.plusFourFightingSpiritAcquired,
+            Strings.plusFourFightingSpiritAcquired,
+            Strings.plusFiveFightingSpiritAcquired
+        ],
+        skillType: Strings.passive
+    )
+    public static let modelDisqualification = Skill(
+        skillName: Strings.modelDisqualification,
+        description: Strings.modelDisqualificatinoDescription,
+        initialCooldown: 5,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.minusOneTurnCooldown,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFifteenPercentDamageDealt
+        ]
     )
     
 }

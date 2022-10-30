@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Constants {
+public class Constants {
     public static let availableHeros: [String: Hero] = [
         // MARK: 5 Star Fire Heros
         Strings.bombModelKanna: HeroCollection.bombModelKanna,
@@ -26,20 +26,23 @@ public struct Constants {
         Strings.bellona: HeroCollection.bellona,
         Strings.celine: HeroCollection.celine,
         Strings.charles: HeroCollection.charles,
-        Strings.laika: HeroCollection.laika
+        Strings.laika: HeroCollection.laika,
         
         // MARK: 5 star light heros
         Strings.ambitiousTywin: HeroCollection.ambitiousTywin,
         Strings.belian: HeroCollection.belian,
         Strings.spiritEyeCeline: HeroCollection.spiritEyeCeline,
         Strings.commanderPavel: HeroCollection.commanderPavel,
+        Strings.conquerorLilias: HeroCollection.conquerorLilias,
+        Strings.desertJewelBasar: HeroCollection.desertJewelBasar,
         
         // MARK: 5 star dark heros
         Strings.apocalypseRavi: HeroCollection.apocalypseRavi,
         Strings.arbiterVildred: HeroCollection.arbiterVildred,
         Strings.bloodMoonHaste: HeroCollection.bloodMoonHaste,
         Strings.briarWitchIseria: HeroCollection.briarWitchIseria,
-        Strings.closerCharles: HeroCollection.closerCharles
+        Strings.closerCharles: HeroCollection.closerCharles,
+        Strings.designerLilibet: HeroCollection.designerLilibet
     ]
     // MARK: Epic Catalyst dictionary
     public static let epicCatalystDictionary: [String: String] = [

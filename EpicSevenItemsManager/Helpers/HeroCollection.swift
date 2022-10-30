@@ -44,6 +44,19 @@ public enum HeroCollection {
             SkillCollection.spiritGate_BurningPossession
         ]
     )
+    public static let conquerorLilias = Hero(
+        name: Strings.conquerorLilias,
+        starSign: StarSigns.aquarius,
+        heroClass: HeroClasses.warrior,
+        element: Elements.light,
+        rarity: "5",
+        skills: [
+            SkillCollection.kneelDown,
+            SkillCollection.cover,
+            SkillCollection.forHonor
+        ]
+    )
+    public static let desertJewelBasar = Hero( name: Strings.desertJewelBasar, starSign: StarSigns.sagittarius, heroClass: HeroClasses.soulWeaver, element: Elements.light, rarity: "5", skills: [SkillCollection.desertWind, SkillCollection.desertStorm, SkillCollection.bastetRoar])
     
     // MARK: 5 Star dark heros
     public static let apocalypseRavi = Hero(name: Strings.apocalypseRavi, starSign: StarSigns.cancer, heroClass: HeroClasses.warrior, element: Elements.dark, rarity: "5", skills: [SkillCollection.spectralAxe, SkillCollection.warGodsMight, SkillCollection.deliveranceSoulExchange])
@@ -51,4 +64,5 @@ public enum HeroCollection {
     public static let bloodMoonHaste = Hero(name: Strings.bloodMoonHaste, starSign: StarSigns.pisces, heroClass: HeroClasses.soulWeaver, element: Elements.dark, rarity: "5", skills: [SkillCollection.bloodScythe, SkillCollection.grudge, SkillCollection.moonSlash])
     public static let briarWitchIseria = Hero(name: Strings.briarWitchIseria, starSign: StarSigns.gemini, heroClass: HeroClasses.ranger, element: Elements.dark, rarity: "5", skills: [SkillCollection.fallenFlower, SkillCollection.witchesCurse, SkillCollection.cursedThorn])
     public static let closerCharles = Hero(name: Strings.closerCharles, starSign: StarSigns.scorpio, heroClass: HeroClasses.thief, element: Elements.dark, rarity: "5", skills: [SkillCollection.elimination, SkillCollection.closer, SkillCollection.descent])
+    public static let designerLilibet = Hero(name: Strings.designerLilibet, starSign: StarSigns.cancer, heroClass: HeroClasses.warrior, element: Elements.dark, rarity: "5", skills: [SkillCollection.sliceToPieces, SkillCollection.emergencyStitching, SkillCollection.modelDisqualification])
 }
