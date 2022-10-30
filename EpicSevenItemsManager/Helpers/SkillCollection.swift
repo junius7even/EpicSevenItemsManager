@@ -129,6 +129,44 @@ public enum SkillCollection {
         soulBurnEffect: Strings.oneSoulIncreasesDamageDealt,
         requiredFullSouls: 1
     )
+    // Edward
+    public static let illTakeYouOn = Skill(
+        skillName: Strings.illTakeYouOn,
+        description: Strings.illTakeYouOnDescription,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTenPercentBarrierStrength,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusFifteenPercentBarrierStrength,
+            Strings.plusFifteenPercentDamageDealt
+        ]
+    )
+    public static let equivalentExchange = Skill(
+        skillName: Strings.equivalentExchange,
+        description: Strings.equivalentExchangeDescription,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ],
+        skillType: Strings.passive
+    )
+    public static let illShowYouOurDifference = Skill(
+        skillName: Strings.illShowYouOurDifference,
+        description: Strings.illShowYouOurDifferenceDescription,
+        initialCooldown: 5,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.minusOneTurnCooldown,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ],
+        soulBurnEffect: Strings.minusTwoTurnCooldown,
+        requiredFullSouls: 1
+    )
     // MARK: Ice 5 star heros
     // Aria
     public static let shadowCall = Skill(
@@ -167,6 +205,46 @@ public enum SkillCollection {
         initialCooldown: 5,
         skillEnhancementEffects: [
             Strings.minusOneTurnCooldown
+        ]
+    )
+    // Cerise
+    public static let mysticalArrow = Skill(
+        skillName: Strings.mysticalArrow,
+        description: Strings.mysticalArrowDescription,
+        initialEffectChance: 10,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTwoPercentCombatReadiness,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusThreePercentCombatReadiness,
+            Strings.plusFifteenPercentDamageDealt
+        ]
+    )
+    public static let luminousExplosion = Skill(
+        skillName: Strings.luminousExplosion,
+        description: Strings.luminousExplosionDescription,
+        initialCooldown: 4,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.minusOneTurnCooldown,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ],
+        soulBurnEffect: Strings.ignoresEffectResistance,
+        requiredFullSouls: 2
+    )
+    public static let frostStorm = Skill(
+        skillName: Strings.frostStorm,
+        description: Strings.frostStormDescription,
+        initialCooldown: 5,
+        initialEffectChance: 75,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTenPercentEffectChance,
+            Strings.minusOneTurnCooldown,
+            Strings.plusFifteenPercentEffectChance,
+            Strings.plusFifteenPercentDamageDealt
         ]
     )
     // Choux
@@ -285,6 +363,46 @@ public enum SkillCollection {
         soulBurnEffect: Strings.grantsExtraTurn,
         requiredFullSouls: 2
     )
+    // Eda
+    public static let icyImapct = Skill(
+        skillName: Strings.icyImpact,
+        description: Strings.icyImpactDescription,
+        initialEffectChance: 65,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTenPercentEffectChance,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ]
+    )
+    public static let coldSnap = Skill(
+        skillName: Strings.coldSnap,
+        description: Strings.coldSnapDescription,
+        initialCooldown: 4,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.minusOneTurnCooldown,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ],
+        soulBurnEffect: Strings.grantsExtraTurn,
+        requiredFullSouls: 2
+    )
+    public static let absoluteZero = Skill(
+        skillName: Strings.absoluteZero,
+        description: Strings.absoluteZero,
+        initialCooldown: 5,
+        initialEffectChance: 60,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTenPercentEffectChance,
+            Strings.minusOneTurnCooldown,
+            Strings.plusFifteenPercentEffectChance,
+            Strings.plusFifteenPercentDamageDealt
+        ]
+    )
     
     // MARK: Earth 5 star heros
     // Alencia
@@ -301,46 +419,6 @@ public enum SkillCollection {
         ],
         soulBurnEffect: Strings.eradicateSoulburnDescription,
         requiredFullSouls: 1
-    )
-    // Cerise
-    public static let mysticalArrow = Skill(
-        skillName: Strings.mysticalArrow,
-        description: Strings.mysticalArrowDescription,
-        initialEffectChance: 10,
-        skillEnhancementEffects: [
-            Strings.plusFivePercentDamageDealt,
-            Strings.plusTwoPercentCombatReadiness,
-            Strings.plusTenPercentDamageDealt,
-            Strings.plusThreePercentCombatReadiness,
-            Strings.plusFifteenPercentDamageDealt
-        ]
-    )
-    public static let luminousExplosion = Skill(
-        skillName: Strings.luminousExplosion,
-        description: Strings.luminousExplosionDescription,
-        initialCooldown: 4,
-        skillEnhancementEffects: [
-            Strings.plusFivePercentDamageDealt,
-            Strings.plusFivePercentDamageDealt,
-            Strings.minusOneTurnCooldown,
-            Strings.plusTenPercentDamageDealt,
-            Strings.plusTenPercentDamageDealt
-        ],
-        soulBurnEffect: Strings.ignoresEffectResistance,
-        requiredFullSouls: 2
-    )
-    public static let frostStorm = Skill(
-        skillName: Strings.frostStorm,
-        description: Strings.frostStormDescription,
-        initialCooldown: 5,
-        initialEffectChance: 75,
-        skillEnhancementEffects: [
-            Strings.plusFivePercentDamageDealt,
-            Strings.plusTenPercentEffectChance,
-            Strings.minusOneTurnCooldown,
-            Strings.plusFifteenPercentEffectChance,
-            Strings.plusFifteenPercentDamageDealt
-        ]
     )
     // Alencia
     public static let nobleBlood = Skill(

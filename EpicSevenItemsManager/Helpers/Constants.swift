@@ -13,6 +13,7 @@ public class Constants {
         Strings.bombModelKanna: HeroCollection.bombModelKanna,
         Strings.cecilia: HeroCollection.cecilia,
         Strings.cermia: HeroCollection.cermia,
+        Strings.edward: HeroCollection.edward,
         
         // MARK: 5 Star ice heros
         Strings.aria: HeroCollection.aria,
@@ -20,6 +21,7 @@ public class Constants {
         Strings.choux: HeroCollection.choux,
         Strings.diene: HeroCollection.diene,
         Strings.dizzy: HeroCollection.dizzy,
+        Strings.eda: HeroCollection.eda,
         
         // MARK: 5 star earth heros
         Strings.alencia: HeroCollection.alencia,

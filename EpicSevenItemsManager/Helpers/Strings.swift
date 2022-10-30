@@ -41,6 +41,14 @@ public enum Strings {
     public static let playingWithFireDescription = "Attacks with a flaming sword, with a 55% chance to make the target unhealable for 1 turn."
     public static let hotStreakDescription = "Shoots fire, granting the caster Increase Attack (Greater), resetting the cooldown of All-In!, and granting an extra turn."
     public static let allInDescription = "Attacks with a blazing inferno, penetrating Defense by 50%."
+    // Edward
+    public static let edward = "Edward-Elric"
+    public static let illTakeYouOn = "I'll-Take-You-On!"
+    public static let equivalentExchange = "Equivalent-Exchange"
+    public static let illShowYouOurDifference = "I'll-Show-You-Our-Difference"
+    public static let illTakeYouOnDescription = "Attacks the enemy with a transmuted blade, and grants a barrier to the caster for 1 turn. Damage dealt and barrier strength increase proportional to the caster's max Health."
+    public static let equivalentExchangeDescription = "After being attacked, when the caster has a debuff, dispels one debuff and activates Rise!. Rise!: Attacks all enemies with ground thorns, dispelling one buff and inflicting a random debuff for 2 turns, before increasing Combat Readiness of the caster by 20%. Damage dealt increases proportional to the caster's max Health.\n(Random Debuff: Decreased Hit Chance, Decreased Attack, Provoke, Silence, Restrict)"
+    public static let illShowYouOurDifferenceDescription = "Attacks the enemy together with Alphonse, and increases Combat Readiness of the caster by 50%. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored. Damage dealt increases proportional to the caster's max Health. Damage dealt increases every time this skill is used and can stack up to 3 times."
     
     // MARK: 5 Star Ice Heros
     
@@ -84,6 +92,14 @@ public enum Strings {
     public static let iUsedThisToCatchFishDescription = "Attacks all enemies with the power of magic, with a 25% chance to stun for 1 turn. Deals increased damage to debuffed enemies."
     public static let gammaRayDescription = "Attacks all enemies with a powerful ray, extending the duration of debuffs by 1 turn, except for those which prevent the enemy for moving, before decreasing Combat Readiness by 50%."
     public static let emotionalGammaRayDescription = "Unleashes a giant explosion to attack all enemies. The attack misses, but inflicts decreased Speed, Attack and Decrease Hit Chance for 2 turns regardless."
+    // Eda
+    public static let eda = "Eda"
+    public static let icyImpact = "Icy-Impact"
+    public static let coldSnap = "Cold-Snap"
+    public static let absoluteZero = "Absolute-Zero"
+    public static let icyImpactDescription = "Attacks the enemy with shards of ice, with a 65% chance to decrease Defense for 1 turn."
+    public static let coldSnapDescription = "Attacks all enemies with an explosion of ice, dispelling two buffs before decreasing Combat Readiness by a random amount between 15% and 40%. Grants the caster skill nullifier once."
+    public static let absoluteZeroDescription = "Releases energy to attack all enemies, with a 60% chance to stun for 1 turn and increases Combat Readiness of all allies by 20%. When an ally uses a non-attack skill and this skill is available, increases Combat Readiness of the caster by 20%."
     
     // MARK: 5 Star Earth heros
     
