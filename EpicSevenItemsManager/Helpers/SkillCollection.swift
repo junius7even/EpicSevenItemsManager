@@ -207,6 +207,84 @@ public enum SkillCollection {
             Strings.plusTenPercentDamageDealt
         ]
     )
+    // Diene
+    public static let lightOfJudgement = Skill(
+        skillName: Strings.lightOfJudgement,
+        description: Strings.lightOfJudgementDescription,
+        initialEffectChance: 10,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTwoPercentCombatReadiness,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusThreePercentCombatReadiness,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ]
+    )
+    public static let blessingsOfTheGoddess = Skill(
+        skillName: Strings.blessingsOfTheGoddess,
+        description: Strings.blessingsOfTheGoddessDescription,
+        initialCooldown: 4,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentBarrierStrength,
+            Strings.plusFivePercentBarrierStrength,
+            Strings.minusOneTurnCooldown,
+            Strings.plusTenPercentBarrierStrength,
+            Strings.plusFifteenPercentBarrierStrength,
+            Strings.plusFifteenPercentBarrierStrength
+        ]
+    )
+    public static let saintsPrayer = Skill(
+        skillName: Strings.saintsPrayer,
+        description: Strings.saintsPrayerDescription,
+        initialCooldown: 5,
+        skillEnhancementEffects: [
+            Strings.acquirePlusOneSoul,
+            Strings.minusOneTurnCooldown
+        ],
+        soulBurnEffect: Strings.minusTwoTurnCooldown,
+        requiredFullSouls: 1
+    )
+    // Dizzy
+    public static let iUsedThisToCatchFish = Skill(
+        skillName: Strings.iUsedThisToCatchFish,
+        description: Strings.iUsedThisToCatchFishDescription,
+        initialEffectChance: 25,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ]
+    )
+    public static let gammaRay = Skill(
+        skillName: Strings.gammaRay,
+        description: Strings.gammaRayDescription,
+        initialCooldown: 4,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.minusOneTurnCooldown,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ]
+    )
+    public static let emotionalGammaRay = Skill(
+        skillName: Strings.emotionalGammaRay,
+        description: Strings.emotionalGammaRayDescription,
+        initialCooldown: 5,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.minusOneTurnCooldown,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ],
+        soulBurnEffect: Strings.grantsExtraTurn,
+        requiredFullSouls: 2
+    )
     
     // MARK: Earth 5 star heros
     // Alencia

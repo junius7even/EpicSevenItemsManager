@@ -18,6 +18,8 @@ public class Constants {
         Strings.aria: HeroCollection.aria,
         Strings.cerise: HeroCollection.cerise,
         Strings.choux: HeroCollection.choux,
+        Strings.diene: HeroCollection.diene,
+        Strings.dizzy: HeroCollection.dizzy,
         
         // MARK: 5 star earth heros
         Strings.alencia: HeroCollection.alencia,

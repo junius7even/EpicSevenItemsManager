@@ -68,6 +68,22 @@ public enum Strings {
     public static let chopDescription = "Attacks the enemy with a spear before increasing the caster's Combat Readiness by 15%. A critical hit will double the amount of Focus gained. Damage dealt increases proportional to the caster's max health."
     public static let fwooooshDescription = "Attacks the enemy by wildly swinging the spear and absorbs some of the damage dealt as Health. Penetrates the enemy's Defense by 70%. When the caster's stacked Focus is 5, consumes all Focus, increasing damage dealt and resetting the cooldown of Fwooosh! Damage dealt increases proportional to the caster's max health."
     public static let helpMeCreamDescription = "Freezes all enemies before attacking with Cream. Increases Critical Hit Resistance of all allies for 2 turns and grants the caster immunity for 2 turns. Damage dealt increases proportional to the caster's max Health. When this skill is unavailable due to cooldown reset, after an ally is attacked, has a 20% chance to counterattack."
+    // Diene
+    public static let diene = "Diene"
+    public static let lightOfJudgement = "Light-of-Judgement"
+    public static let blessingsOfTheGoddess = "Blessings-of-the-Goddess"
+    public static let saintsPrayer = "Saint's-Prayer"
+    public static let lightOfJudgementDescription = "Emits a ray of brilliant light, increasing the caster's Combat Readiness by 10%. Effect doubles when caster is buffed."
+    public static let blessingsOfTheGoddessDescription = "With the Blessing of the Goddess, dispels two debuffs from all allies and grants a barrier for 2 turns. Barrier strength increases proportional to the target's max Health."
+    public static let saintsPrayerDescription = "A miracle of the Goddess manifests, increasing Attack and Critical Hit Resistance of all allies for 3 turns, before increasing the caster's Combat Readiness by 50%."
+    // Dizzy
+    public static let dizzy = "Dizzy"
+    public static let iUsedThisToCatchFish = "I-Used-This-to-Catch-Fish"
+    public static let gammaRay = "Gamma-Ray"
+    public static let emotionalGammaRay = "Emotional-Gamma-Ray"
+    public static let iUsedThisToCatchFishDescription = "Attacks all enemies with the power of magic, with a 25% chance to stun for 1 turn. Deals increased damage to debuffed enemies."
+    public static let gammaRayDescription = "Attacks all enemies with a powerful ray, extending the duration of debuffs by 1 turn, except for those which prevent the enemy for moving, before decreasing Combat Readiness by 50%."
+    public static let emotionalGammaRayDescription = "Unleashes a giant explosion to attack all enemies. The attack misses, but inflicts decreased Speed, Attack and Decrease Hit Chance for 2 turns regardless."
     
     // MARK: 5 Star Earth heros
     
@@ -309,7 +325,8 @@ public enum Strings {
     public static let plusThreeFightingSpiritAcquired = "+3% Fighting Spirit acquired."
     public static let plusFourFightingSpiritAcquired = "+4% Fighting Spirit acquired."
     public static let plusFiveFightingSpiritAcquired = "+5% Fighting Spirit acquired."
-    
+    // Soul acquisition
+    public static let acquirePlusOneSoul = "Acquire +1 Soul"
     
     // MARK: Set names
     public static let counterSet = "Counter Set"

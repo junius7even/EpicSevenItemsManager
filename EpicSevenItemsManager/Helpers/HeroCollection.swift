@@ -17,6 +17,8 @@ public enum HeroCollection {
     public static let aria = Hero(name: Strings.aria, starSign: StarSigns.taurus, heroClass: HeroClasses.mage, element: Elements.ice, rarity: "5", skills: [SkillCollection.shadowCall, SkillCollection.guideOfDarkness, SkillCollection.theUmbralHour])
     public static let cerise = Hero(name: Strings.cerise, starSign: StarSigns.aquarius, heroClass: HeroClasses.ranger, element: Elements.ice, rarity: "5", skills: [SkillCollection.mysticalArrow, SkillCollection.luminousExplosion, SkillCollection.frostStorm])
     public static let choux = Hero(name: Strings.choux, starSign: StarSigns.capricorn, heroClass: HeroClasses.warrior, element: Elements.ice, rarity: "5", skills: [SkillCollection.chop, SkillCollection.fwoooosh, SkillCollection.helpMeCream])
+    public static let diene = Hero(name: Strings.diene, starSign: StarSigns.gemini, heroClass: HeroClasses.soulWeaver, element: Elements.ice, rarity: "5", skills: [SkillCollection.lightOfJudgement, SkillCollection.blessingsOfTheGoddess, SkillCollection.saintsPrayer])
+    public static let dizzy = Hero(name: Strings.dizzy, starSign: StarSigns.taurus, heroClass: HeroClasses.mage, element: Elements.ice, rarity: "%", skills: [SkillCollection.iUsedThisToCatchFish, SkillCollection.gammaRay, SkillCollection.emotionalGammaRay])
     
     // MARK: 5 Star Earth Heros
     public static let alencia = Hero(name: Strings.alencia, starSign: StarSigns.cancer, heroClass: HeroClasses.warrior, element: Elements.earth, rarity: "5'", skills: [SkillCollection.eradicate, SkillCollection.nobleBlood, SkillCollection.genesis])
