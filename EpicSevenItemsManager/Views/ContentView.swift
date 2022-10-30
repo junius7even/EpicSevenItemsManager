@@ -19,7 +19,7 @@ struct ContentView: View {
     @State var currentItem: String = "none"
     @State var currentPageSelection: String = "none"
     
-    @State var heroArray: [String] = [Strings.aria, Strings.cerise, Strings.choux, Strings.diene, Strings.dizzy, Strings.eda, Strings.alencia, Strings.baiken, Strings.basar, Strings.bellona, Strings.celine, Strings.charles, Strings.bombModelKanna, Strings.cecilia, Strings.cermia, Strings.edward, Strings.ambitiousTywin, Strings.belian, Strings.commanderPavel, Strings.spiritEyeCeline, Strings.conquerorLilias, Strings.desertJewelBasar, Strings.apocalypseRavi, Strings.arbiterVildred, Strings.bloodMoonHaste, Strings.briarWitchIseria, Strings.closerCharles, Strings.designerLilibet]
+    @State var heroArray: [String] = [Strings.aria, Strings.cerise, Strings.choux, Strings.diene, Strings.dizzy, Strings.eda, Strings.elena, Strings.alencia, Strings.baiken, Strings.basar, Strings.bellona, Strings.celine, Strings.charles, Strings.bombModelKanna, Strings.cecilia, Strings.cermia, Strings.edward, Strings.ambitiousTywin, Strings.belian, Strings.commanderPavel, Strings.spiritEyeCeline, Strings.conquerorLilias, Strings.desertJewelBasar, Strings.apocalypseRavi, Strings.arbiterVildred, Strings.bloodMoonHaste, Strings.briarWitchIseria, Strings.closerCharles, Strings.designerLilibet]
 //    @State var heroArray: [String] = ["Apocalypse-Ravi", "Spirit-Eye-Celine", "Straze", "Celine", "Summertime-Iseria", "Ran", "Belian", "Operator-Sigret"]
     @State var isPresented: Bool = false
     @State private var screenSelection: Int? = 0

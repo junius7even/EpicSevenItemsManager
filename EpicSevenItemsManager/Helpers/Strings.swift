@@ -100,6 +100,14 @@ public enum Strings {
     public static let icyImpactDescription = "Attacks the enemy with shards of ice, with a 65% chance to decrease Defense for 1 turn."
     public static let coldSnapDescription = "Attacks all enemies with an explosion of ice, dispelling two buffs before decreasing Combat Readiness by a random amount between 15% and 40%. Grants the caster skill nullifier once."
     public static let absoluteZeroDescription = "Releases energy to attack all enemies, with a 60% chance to stun for 1 turn and increases Combat Readiness of all allies by 20%. When an ally uses a non-attack skill and this skill is available, increases Combat Readiness of the caster by 20%."
+    // Elena
+    public static let elena = "Elena"
+    public static let starlightsWill = "Starlight's-Will"
+    public static let guardiansAuthority = "Guardian's-Authority"
+    public static let eternallyShiningComet = "Eternally-Shining-Comet"
+    public static let starlightsWillDescription = "Attacks with the power of the stars, dispelling one debuff each from two allies."
+    public static let guardiansAuthorityDescription = "Decreases the damage received from attacks that target all enemies by 15% and activates Consecrated Ground. When this effect is granted more than once, only the strongest effect is applied. Consecrated Ground can be activated once every 2 turns. Consecrated Ground: Recovers the Health of all allies before increasing Combat Readiness of the caster by 20%. Amount recovered increases proportional to the caster's max Health."
+    public static let eternallyShiningCometDescription = "Attacks all enemies with a meteor shower, granting invincibility for 1 turn and increased Effect Resistance for 2 turns to all allies."
     
     // MARK: 5 Star Earth heros
     
@@ -286,6 +294,7 @@ public enum Strings {
     public static let twoTurnRedirectedProvoke = "Inflicts Redirected Provoke for 2 turns."
     public static let increasesAmountRecovered = "Increases the amount recovered. (-10 Souls)"
     public static let oneSoulIncreaseEffectChanceToHundredPercent = "Increases effect chance to 100%. (-10 Souls)"
+    public static let dispelAllDebuffsFromAllies = "Dispels all debufss from all allies. (-20 Souls)"
     
     // MARK: enhancement effects
     // Damage dealt
@@ -343,6 +352,9 @@ public enum Strings {
     public static let plusFiveFightingSpiritAcquired = "+5% Fighting Spirit acquired."
     // Soul acquisition
     public static let acquirePlusOneSoul = "Acquire +1 Soul"
+    // Damage received
+    public static let minusPointFivePercentDamageReceived = "-0.5% damage received"
+    public static let minusTwoPercentDamageReceived = "-2% damage received"
     
     // MARK: Set names
     public static let counterSet = "Counter Set"

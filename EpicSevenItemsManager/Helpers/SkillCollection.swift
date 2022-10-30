@@ -403,6 +403,44 @@ public enum SkillCollection {
             Strings.plusFifteenPercentDamageDealt
         ]
     )
+    // Elena
+    public static let starlightsWill = Skill(
+        skillName: Strings.starlightsWill,
+        description: Strings.starlightsWillDescription,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusFivePercentDamageDealt,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusTenPercentDamageDealt
+        ],
+        soulBurnEffect: Strings.dispelAllDebuffsFromAllies,
+        requiredFullSouls: 2
+    )
+    public static let guardiansAuthority = Skill(
+        skillName: Strings.guardiansAuthority,
+        description: Strings.guardiansAuthorityDescription,
+        skillEnhancementEffects: [
+            Strings.minusPointFivePercentDamageReceived,
+            Strings.minusPointFivePercentDamageReceived,
+            Strings.minusPointFivePercentDamageReceived,
+            Strings.minusPointFivePercentDamageReceived,
+            Strings.minusPointFivePercentDamageReceived,
+            Strings.minusPointFivePercentDamageReceived,
+            Strings.minusTwoPercentDamageReceived
+        ],
+        skillType: Strings.passive
+    )
+    public static let eternallyShiningComet = Skill(
+        skillName: Strings.eternallyShiningComet,
+        description: Strings.eternallyShiningCometDescription,
+        initialCooldown: 6,
+        skillEnhancementEffects: [
+            Strings.plusFivePercentDamageDealt,
+            Strings.minusOneTurnCooldown,
+            Strings.plusTenPercentDamageDealt,
+            Strings.plusFifteenPercentDamageDealt
+        ]
+    )
     
     // MARK: Earth 5 star heros
     // Alencia
