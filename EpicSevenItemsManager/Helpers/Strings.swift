@@ -186,6 +186,14 @@ public enum Strings {
     public static let supportingFireDescription = "Attacks the enemy, increasing Combat Readiness of the caster and a random ally except for the caster by 10%."
     public static let strikeOrderDescription = "Selects an enemy, with a 75% chance to target them for 2 turns. Increases Attack of the ally except for the caster with the highest Attack for 2 turns, and decreases skill cooldown by 1 turn, before triggering a Dual Attack."
     public static let volleyFireDescription = "Shoots out all wings to attack all enemies, with a 75% to decrease Speed for 2 turns, and a 50% chance to put them to sleep for 1 turn, before granting Immunity to all allies for 2 turns."
+    // Ervalen
+    public static let ervalen = "Ervalen"
+    public static let vengeance = "Vengeance"
+    public static let swordOfHatred = "Sword-of-Hatred"
+    public static let heirToTheThrone = "Heir-to-the-Throne"
+    public static let vengeanceDescription = "Rapidly attacks the enemy, with a 35% chance to decrease Defense for 2 turns."
+    public static let swordOfHatredDescription = "Attacks the enemy repeatedly and grants the caster immunity for 1 turn. When the enemy's max Health is greater than the caster's max Health, Combat Readiness of the caster increases proportional to the difference up to a maximum of 30%."
+    public static let heirToTheThroneDescription = "Attacks the enemy with a sword, adopting a counterattacking stance and granting a barrier to the caster for 2 turns. When the enemy is defeated, extends buff duration of the caster by 1 turn and grants an extra turn. When the enemy's max Health is greater than the caster's max Health, damage dealt increases proportional to the difference, up to a maximum of 70%. Barrier strength increases proportional to the caster's Attack."
     
     // MARK: 5 Star Light Heros
     

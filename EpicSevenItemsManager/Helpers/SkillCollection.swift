@@ -731,6 +731,10 @@ public enum SkillCollection {
         soulBurnEffect: Strings.minusTwoTurnCooldown,
         requiredFullSouls: 1
     )
+    // Ervalen
+    public static let vengeance = Skill(skillName: Strings.vengeance, description: Strings.vengeanceDescription, initialEffectChance: 35, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentEffectChance, Strings.plusTenPercentDamageDealt, Strings.plusTenPercentEffectChance, Strings.plusFifteenPercentDamageDealt])
+    public static let swordOfHatred = Skill(skillName: Strings.swordOfHatred, description: Strings.swordOfHatredDescription, initialCooldown: 2, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.plusTenPercentDamageDealt], soulBurnEffect: Strings.oneSoulIncreasesDamageDealt, requiredFullSouls: 1)
+    public static let heirToTheThrone = Skill(skillName: Strings.heirToTheThrone, description: Strings.heirToTheThroneDescription, initialCooldown: 5, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.minusOneTurnCooldown, Strings.plusTenPercentDamageDealt, Strings.plusTenPercentDamageDealt])
     
     // MARK: Light 5 star heros
     
