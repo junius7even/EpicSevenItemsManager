@@ -124,6 +124,14 @@ public enum Strings {
     public static let humaDescription = "Attacks the enemy with ice, before recovering Health of the ally with the lowest Health. Amount recovered increases proportional to the caster's max Health."
     public static let spiritsBlessingDescription = "Grants a blessing to an ally except for the caster, dispelling two debuffs and increasing Attack for 2 turns before increasing Combat Readiness by 40%. Increases Combat Readiness of the caster by 25%."
     public static let divineProtectionOfTheGreatSpiritDescription = "Uses spiritual arts to dispel two debuffs from all allies, before recovering Health and granting a barrier for 2 turns. Amount recovered and barrier strength increase proportional to the caster's max Health."
+    // Fairytale Tenebria
+    public static let fairytaleTenebria = "Fairytale-Tenebria"
+    public static let onePair = "One-Pair"
+    public static let wildCard = "Wild-Card"
+    public static let teaParty = "Tea-Party"
+    public static let onePairDescirption = "Attacks the enemy with a mystical power, with a 30% chance each to inflict two poison effects for 1 turn."
+    public static let wildCardDescription = "Activates Shuffle when an ally is attacked by an enemy inflicted with provoke or redirected provoke. Can only be activated once per turn. Shuffle: Attacks all enemies and inflicts a random debuff for 1 turn. A successful attack inflicts additional damage when the target is inflicted with provoke or redirected provoke. Additional damage increases proportional to the target's max Health."
+    public static let teaPartyDescription = "Lures all enemies in with a tea party and attacks, dispelling one buff, making them unable to be buffed for 2 turns and inflicting redirected provoke for 1 turn."
     
     // MARK: 5 Star Earth heros
     
