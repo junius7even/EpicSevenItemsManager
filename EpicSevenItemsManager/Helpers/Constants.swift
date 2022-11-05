@@ -44,6 +44,7 @@ public class Constants {
         Strings.commanderPavel: HeroCollection.commanderPavel,
         Strings.conquerorLilias: HeroCollection.conquerorLilias,
         Strings.desertJewelBasar: HeroCollection.desertJewelBasar,
+        Strings.faithlessLidica: HeroCollection.faithlessLidica,
         
         // MARK: 5 star dark heros
         Strings.apocalypseRavi: HeroCollection.apocalypseRavi,

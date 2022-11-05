@@ -452,7 +452,7 @@ public enum SkillCollection {
     // Fairytale Tenebria
     public static let onePair = Skill(skillName: Strings.onePair, description: Strings.onePairDescirption, initialCooldown: 0, initialEffectChance: 30, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentEffectChance, Strings.plusTenPercentDamageDealt, Strings.plusTenPercentDamageDealt, Strings.plusTenPercentEffectChance, Strings.plusFifteenPercentDamageDealt], skillType: Strings.active, soulBurnEffect: Strings.grantsExtraTurn, requiredFullSouls: 2)
     public static let wildCard = Skill(skillName: Strings.wildCard, description: Strings.wildCardDescription, initialCooldown: 0, initialEffectChance: 0, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.plusTenPercentDamageDealt], skillType: Strings.passive)
-    public static let teaParty = Skill(skillName: Strings.teaParty, description: Strings.teaPartyDescription, initialCooldown: 5, initialEffectChance: 100, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.minusOneTurnCooldown Strings.plusTenPercentDamageDealt, Strings.plusTenPercentDamageDealt], skillType: Strings.active)
+    public static let teaParty = Skill(skillName: Strings.teaParty, description: Strings.teaPartyDescription, initialCooldown: 5, initialEffectChance: 100, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.minusOneTurnCooldown, Strings.plusTenPercentDamageDealt, Strings.plusTenPercentDamageDealt], skillType: Strings.active)
     
     // MARK: Earth 5 star heros
     // Alencia
@@ -979,6 +979,10 @@ public enum SkillCollection {
             Strings.plusThreePercentCombatReadiness
         ]
     )
+    // Faithless Lidica
+    public static let thorn = Skill(skillName: Strings.thorn, description: Strings.thornDescription, initialCooldown: 0, initialEffectChance: 60, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentEffectChance, Strings.plusFivePercentDamageDealt, Strings.plusTenPercentEffectChance, Strings.plusTenPercentDamageDealt], skillType: Strings.active)
+    public static let larkspur = Skill(skillName: Strings.larkspur, description: Strings.larkspurDescription, initialCooldown: 4, initialEffectChance: 85, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentEffectChance, Strings.plusFivePercentDamageDealt, Strings.plusTenPercentEffectChance, Strings.plusFifteenPercentDamageDealt], skillType: Strings.active)
+    public static let hysteria = Skill(skillName: Strings.hysteria, description: Strings.hysteriaDescription, initialCooldown: 6, initialEffectChance: 0, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.minusOneTurnCooldown, Strings.plusTenPercentDamageDealt, Strings.plusFifteenPercentDamageDealt], skillType: Strings.active, soulBurnEffect: Strings.ignoresEffectResistance, requiredFullSouls: 2)
     
     // MARK: 5 star Dark Heros
     
@@ -1220,5 +1224,9 @@ public enum SkillCollection {
             Strings.plusFifteenPercentDamageDealt
         ]
     )
+    // Fallen Cecilia
+    public static let mistake = Skill(skillName: Strings.mistake, description: Strings.mistakeDescription, initialCooldown: 0, initialEffectChance: 85, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentEffectChance, Strings.plusTenPercentDamageDealt, Strings.plusTenPercentEffectChance, Strings.plusFifteenPercentDamageDealt])
+    public static let strongInstinct = Skill(skillName: Strings.strongInstinct, description: Strings.strongInstinctDescription, skillEnhancementEffects: [Strings.plusFivePercentBarrierStrength, Strings.plusTenPercentBarrierStrength, Strings.plusTenPercentBarrierStrength, Strings.plusFifteenPercentBarrierStrength, Strings.plusFifteenPercentBarrierStrength], skillType: Strings.passive)
+    public static let spearOfResentment = Skill(skillName: Strings.spearOfResentment, description: Strings.spearOfResentmentDescription, initialCooldown: 6, initialEffectChance: 0, skillEnhancementEffects: [Strings.plusFivePercentDamageDealt, Strings.plusFivePercentDamageDealt, Strings.minusOneTurnCooldown, Strings.plusFifteenPercentDamageDealt], skillType: Strings.active, soulBurnEffect: Strings.minusTwoTurnCooldown, requiredFullSouls: 1)
     
 }

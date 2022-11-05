@@ -258,6 +258,14 @@ public enum Strings {
     public static let desertWindDescription = "Attacks the enemy with wind, with a 35% chance to stun for 1 turn, before recovering the Health of all allies. Amount recovered increases proportional to the target's max Health and the caster's Attack."
     public static let desertStormDescription = "With a sandstorm, inflicts barrier inversion on all enemies and has an 85% chance to decrease Hit Chance for 2 turns. When the target is granted a barrier, grants an extra turn to the caster. Barrier Inversion: Inverts barrier into damage. Unaffected by Effect Resistance and whether the attack hits, and applies to Heroes only."
     public static let bastetRoarDescription = "Bastet roars, dispelling all debuffs and granting immunity for 2 turns to all allies, before increasing their Combat Readiness by 20%. When this skill is available, decreases damage suffered from a critical hit by 30%. When more than one damage reduction effect is granted, only the strongest effect is applied."
+    // Faithless Lidica
+    public static let faithlessLidica = "Faithless-Lidica"
+    public static let thorn = "Thorn"
+    public static let larkspur = "Larkspur"
+    public static let hysteria = "Hysteria"
+    public static let thornDescription = "Attacks with a sword, with a 60% chance to decrease Hit Chance for 1 turn."
+    public static let larkspurDescription = "Binds all enemies with a sword, with a 85% chance to dispel one buff, and a critical hit will dispel one additional buff. Increases Combat Readiness of the caster by 25%. This skill cannot trigger a counterattack."
+    public static let hysteriaDescription = "Attacks the enemy indiscriminately, increasing skill cooldown to max and increases Combat Readiness of all allies by 25%. A critical hit grants all allies skill nullifier once, negating damage received from the next attack."
     
     // MARK: 5 Star Dark Heros
     
@@ -313,6 +321,14 @@ public enum Strings {
     public static let sliceToPiecesDescription = "Attacks the enemy with scissors, with a maximum chance of 65% to silence for 1 turn. Damage dealt increases proportional to the caster's Defense."
     public static let emergencyStitchingDescription = "Starts the first battle with 30 Fighting Spirit. When an enemy's turn ends, gains 10 Fighting Spirit for each debuff inflicted on an ally, and when the caster's Fighting Spirit is full, consumes all Fighting Spirit to dispel all debuffs from the caster and increases Defense for 1 turn, before increasing Combat Readiness by 40%."
     public static let modelDisqualificatinoDescription = "Decreases debuff durations of all allies for 2 turns and gets on stage to attack all enemies, increasing their skill cooldown by 1 turn. Increases Combat Readiness of all allies except for the caster by 15%. Damage dealt increases proportional to the caster's Defense."
+    // Fallen Cecilia
+    public static let fallenCecilia = "Fallen-Cecilia"
+    public static let mistake = "Mistake"
+    public static let strongInstinct = "Strong-Instinct"
+    public static let spearOfResentment = "Spear-of-Resentment"
+    public static let mistakeDescription = "Attacks with a spear of revenge, with a 85% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's max Health."
+    public static let strongInstinctDescription = "Grants a barrier for 2 turns to all allies at the beginning of battle, and grants a barrier for 2 turns to the ally with the lowest Health at the end of the caster's turn. Barrier strength increases proportional to the caster's max Health."
+    public static let spearOfResentmentDescription = "Attacks all enemies in an explosion of spiteful emotions. Grants all allies Skill Nullifier, negating damage received from the next skill attack. Damage dealt increases proportional to the caster's max Health."
     
     
     // MARK: Common Soulburns
