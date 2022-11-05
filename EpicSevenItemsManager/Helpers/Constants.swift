@@ -26,6 +26,7 @@ public class Constants {
         Strings.elena: HeroCollection.elena,
         Strings.emilia: HeroCollection.emilia,
         Strings.fairytaleTenebria: HeroCollection.fairytaleTenebria,
+        Strings.flan: HeroCollection.flan,
         
         // MARK: 5 star earth heros
         Strings.alencia: HeroCollection.alencia,
