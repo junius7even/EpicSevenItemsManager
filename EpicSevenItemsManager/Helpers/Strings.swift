@@ -132,6 +132,14 @@ public enum Strings {
     public static let onePairDescirption = "Attacks the enemy with a mystical power, with a 30% chance each to inflict two poison effects for 1 turn."
     public static let wildCardDescription = "Activates Shuffle when an ally is attacked by an enemy inflicted with provoke or redirected provoke. Can only be activated once per turn. Shuffle: Attacks all enemies and inflicts a random debuff for 1 turn. A successful attack inflicts additional damage when the target is inflicted with provoke or redirected provoke. Additional damage increases proportional to the target's max Health."
     public static let teaPartyDescription = "Lures all enemies in with a tea party and attacks, dispelling one buff, making them unable to be buffed for 2 turns and inflicting redirected provoke for 1 turn."
+    // Flan
+    public static let flan = "Flan"
+    public static let communicationBreakdown = "Communication-Breakdown"
+    public static let dataMonopoly = "Data-Monopoly"
+    public static let advantageousDeal = "Advantageous-Deal"
+    public static let communicationBreakdownDescription = "Attacks the enemy with a gun, with a 50% chance to dispel one buff."
+    public static let dataMonopolyDescription = "Encourages an ally, increasing Attack and Critical Hit Damage for 2 turns and increasing Combat Readiness by 30%."
+    public static let advantageousDealDescription = "Drives a hard bargain against all enemies, making them unhealable and decreasing Defense for 2 turns before decreasing Combat Readiness by 15%."
     
     // MARK: 5 Star Earth heros
     
