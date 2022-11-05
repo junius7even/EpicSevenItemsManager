@@ -52,7 +52,8 @@ public class Constants {
         Strings.bloodMoonHaste: HeroCollection.bloodMoonHaste,
         Strings.briarWitchIseria: HeroCollection.briarWitchIseria,
         Strings.closerCharles: HeroCollection.closerCharles,
-        Strings.designerLilibet: HeroCollection.designerLilibet
+        Strings.designerLilibet: HeroCollection.designerLilibet,
+        Strings.fallenCecilia: HeroCollection.fallenCecilia,
     ]
     // MARK: Epic Catalyst dictionary
     public static let epicCatalystDictionary: [String: String] = [
