@@ -49,15 +49,6 @@ public enum Strings {
     public static let illTakeYouOnDescription = "Attacks the enemy with a transmuted blade, and grants a barrier to the caster for 1 turn. Damage dealt and barrier strength increase proportional to the caster's max Health."
     public static let equivalentExchangeDescription = "After being attacked, when the caster has a debuff, dispels one debuff and activates Rise!. Rise!: Attacks all enemies with ground thorns, dispelling one buff and inflicting a random debuff for 2 turns, before increasing Combat Readiness of the caster by 20%. Damage dealt increases proportional to the caster's max Health.\n(Random Debuff: Decreased Hit Chance, Decreased Attack, Provoke, Silence, Restrict)"
     public static let illShowYouOurDifferenceDescription = "Attacks the enemy together with Alphonse, and increases Combat Readiness of the caster by 50%. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored. Damage dealt increases proportional to the caster's max Health. Damage dealt increases every time this skill is used and can stack up to 3 times."
-    // Holiday Yufine
-    public static let holidayYufine = "Holiday-Yufine"
-    public static let justOneBite = "Just-One-Bite!"
-    public static let letsEatTogether = "Let's-Eat-Together"
-    public static let yufinesSpecial = "Yufine's-☆-Special"
-    public static let justOneBiteDescription = "Attacks the enemy by tearing up a food market, with a 50% chance to burn for 1 turn. When used on the caster's turn. Just One Bite! ❤ becomes an attack that targets all enemies. Changed attack is unaffected by elemental disadvantage and does not trigger a Dual Attack."
-    public static let letsEatTogetherDescription = "Reduces the effect of decreased Combat Readiness debuffs inflicted on all allies by 30%. This skill effect does not stack with other passive skills of the same name. Increases Evasion by 35%, and increases Evasion by an additional 35% when the caster is at max Health."
-    public static let yufinesSpecialDescription = "Dispels two debuffs from all allies and attacks all enemies in the middle of the night market. Increases Attack of all allies for 2 turns and Combat Readiness by 20%."
-    
     // Elphelt
     public static let elphelt = "Elphelt"
     public static let barrage = "Barrage"
@@ -66,6 +57,22 @@ public enum Strings {
     public static let barrageDescription = "Fires a barrage of bullets at the enemy, with a 65% chance to make them unable to be buffed for 1 turn."
     public static let judgeBetterHalfDescription = "Traps the enemy in a cake, before attacking them with a cake-cutting blade and increasing Attack of all allies for 2 turns. When the enemy is asleep, decreases Defense of all enemies for 2 turns. Damage dealt increases proportional to the number of debuffs inflicted on the enemy."
     public static let magnumWeddingDescription = "Dispels two buffs from the enemy before shooting a bullet of love, with a 75% chance to put them to sleep and decrease Defense for 2 turns. Grants the caster an extra turn."
+    // Holiday Yufine
+    public static let holidayYufine = "Holiday-Yufine"
+    public static let justOneBite = "Just-One-Bite!"
+    public static let letsEatTogether = "Let's-Eat-Together"
+    public static let yufinesSpecial = "Yufine's-☆-Special"
+    public static let justOneBiteDescription = "Attacks the enemy by tearing up a food market, with a 50% chance to burn for 1 turn. When used on the caster's turn. Just One Bite! ❤ becomes an attack that targets all enemies. Changed attack is unaffected by elemental disadvantage and does not trigger a Dual Attack."
+    public static let letsEatTogetherDescription = "Reduces the effect of decreased Combat Readiness debuffs inflicted on all allies by 30%. This skill effect does not stack with other passive skills of the same name. Increases Evasion by 35%, and increases Evasion by an additional 35% when the caster is at max Health."
+    public static let yufinesSpecialDescription = "Dispels two debuffs from all allies and attacks all enemies in the middle of the night market. Increases Attack of all allies for 2 turns and Combat Readiness by 20%."
+    // Hwayoung
+    public static let hwayoung = "Hwayoung"
+    public static let supersonicKick = "Supersonic-Kick"
+    public static let prairieHawk = "Prairie-Hawk"
+    public static let emperorsFlamingStrike = "Emperor's-Flaming-Strike"
+    public static let supersonicKickDescription = "Attacks the enemy with a kick. When the caster is buffed, inflicts additional damage proportional to the caster's Attack."
+    public static let prairieHawkDescription = "The caster cannot trigger a critical hit, but Attack increases by 20%. Damage suffered from a critical hit decreases by 30%. When more than one damage reduction effect is granted, only the strongest effect is applied. At the start of the battle and at the end of the turn, grants a barrier to the caster for 1 turn. Barrier strength increases proportional to the caster's Attack."
+    public static let emperorsFlamingStrikeDescription = "After dispelling all debuffs from the caster, attacks the enemy with a secret technique and grants immunity to the caster for 2 turns. When the target's max Health is greater than the caster's max Health, penetrates the target's Defense, with penetration rate increasing proportional to the difference, up to a maximum of 100%."
     
     // MARK: 5 Star Ice Heros
     
@@ -432,6 +439,10 @@ public enum Strings {
     public static let minusFourPercentCombatReadiness = "-4% Combat Readiness decrease"
     public static let minusFivePercentCombatReadiness = "-5% Combat Readiness decrease"
     public static let minusSixPercentCombatReadiness = "-6% Combat Readiness decrease"
+    // Attack up
+    public static let plusOnePercentAttack = "+1% Attack"
+    public static let plusTwoPercentAttack = "+2% Attack"
+    public static let plusThreePercentAttack = "+3% Attack"
     
     // MARK: Set names
     public static let counterSet = "Counter Set"
