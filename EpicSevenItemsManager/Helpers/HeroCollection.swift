@@ -14,6 +14,8 @@ public enum HeroCollection {
     public static let cermia = Hero(name: Strings.cermia, starSign: StarSigns.leo, heroClass: HeroClasses.warrior, element: Elements.fire, rarity: "5", skills: [SkillCollection.playingWithFire, SkillCollection.hotStreak, SkillCollection.allIn])
     public static let edward = Hero(name: Strings.edward, starSign: StarSigns.aries, heroClass: HeroClasses.warrior, element: Elements.fire, rarity: "5", skills: [SkillCollection.illTakeYouOn, SkillCollection.equivalentExchange, SkillCollection.illShowYouOurDifference])
     public static let elphelt = Hero(name: Strings.elphelt, starSign: StarSigns.capricorn, heroClass: HeroClasses.ranger, element: Elements.fire, rarity: "5", skills: [SkillCollection.barrage, SkillCollection.judgeBetterHalf, SkillCollection.magnumWedding])
+    public static let holidayYufine = Hero(name: Strings.holidayYufine, starSign: StarSigns.libra, heroClass: HeroClasses.warrior, element: Elements.fire, rarity: "5", skills: [SkillCollection.justOneBite, SkillCollection.letsEatTogether, SkillCollection.yufinesSpecial])
+    
     
     // MARK: 5 Star Ice Heros
     public static let aria = Hero(name: Strings.aria, starSign: StarSigns.taurus, heroClass: HeroClasses.mage, element: Elements.ice, rarity: "5", skills: [SkillCollection.shadowCall, SkillCollection.guideOfDarkness, SkillCollection.theUmbralHour])
