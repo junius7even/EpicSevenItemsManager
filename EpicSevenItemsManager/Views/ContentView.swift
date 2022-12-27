@@ -49,11 +49,14 @@ struct ContentView: View {
                                     )
                                     .shadow(color: Color.secondary, radius: 3, x: 0, y: 0)
                                 VStack(alignment: .leading, spacing: 0) {
-                                    // MARK: Hero element and name
-                                    HStack(spacing: 0) {
+                                    // MARK: Hero element & class & name
+                                    HStack(spacing: 6) {
                                         Image(currentHero.element)
                                             .resizable()
                                             .frame(width: 25, height: 25)
+                                        Image(currentHero.heroClass)
+                                            .resizable()
+                                            .frame(width: 20, height: 20)
                                         Text(
                                             hero.replacingOccurrences(
                                                 of: "-",
