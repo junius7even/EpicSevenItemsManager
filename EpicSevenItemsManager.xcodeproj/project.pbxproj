@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5823443A28F154BF00BCC38D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5823443928F154BF00BCC38D /* Strings.swift */; };
+		58324577295A6D9B002BBC38 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58324576295A6D9B002BBC38 /* Stats.swift */; };
 		584208D728E8AB63007EB298 /* Runes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584208D628E8AB63007EB298 /* Runes.swift */; };
 		5842CFE32817371F00F19CA6 /* Catalysts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5842CFE22817371F00F19CA6 /* Catalysts.swift */; };
 		5842CFE52817375100F19CA6 /* StarSigns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5842CFE42817375100F19CA6 /* StarSigns.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		5823443928F154BF00BCC38D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		58324576295A6D9B002BBC38 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		584208D628E8AB63007EB298 /* Runes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runes.swift; sourceTree = "<group>"; };
 		5842CFE22817371F00F19CA6 /* Catalysts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalysts.swift; sourceTree = "<group>"; };
 		5842CFE42817375100F19CA6 /* StarSigns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSigns.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				58F4828F281A2E93006B9F1D /* Hero.swift */,
 				587A822528EA42DE00BAE18A /* Skill.swift */,
 				58F1ACF428EB824700AD076C /* Awakening.swift */,
+				58324576295A6D9B002BBC38 /* Stats.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				587A823128EA498C00BAE18A /* CatalystPopupPage.swift in Sources */,
 				587A822828EA46A000BAE18A /* SkillCollection.swift in Sources */,
 				58F1ACF728EB854900AD076C /* AwakeningMaterials.swift in Sources */,
+				58324577295A6D9B002BBC38 /* Stats.swift in Sources */,
 				58F48290281A2E93006B9F1D /* Hero.swift in Sources */,
 				584208D728E8AB63007EB298 /* Runes.swift in Sources */,
 				58F1ACF528EB824700AD076C /* Awakening.swift in Sources */,
