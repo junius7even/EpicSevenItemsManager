@@ -40,12 +40,13 @@ struct ContentView: View {
                 concatenatedString.append(skill.skillName + "}")
                 concatenatedString.append(skill.description + "}")
                 concatenatedString.append(String(skill.initialCooldown) + "}")
-                concatenatedString.append(skill.soulBurnEffect + "}")
-                concatenatedString.append(String(skill.requiredFullSouls) + "}")
                 for enhancement in skill.skillEnhancementEffects {
                     concatenatedString.append(enhancement)
                 }
                 concatenatedString.append("}")
+                concatenatedString.append(skill.skillType + "}")
+                concatenatedString.append(skill.soulBurnEffect + "}")
+                concatenatedString.append(String(skill.requiredFullSouls) + "}")
             }
             concatenatedString.append("\n")
         }
