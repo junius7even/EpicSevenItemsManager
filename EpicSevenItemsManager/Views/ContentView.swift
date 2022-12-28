@@ -8,6 +8,61 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    
+    private func OutputToFile()
+    {
+        let allHeros:[String] = [Strings.aria, Strings.cerise, Strings.choux, Strings.diene, Strings.dizzy, Strings.eda, Strings.elena, Strings.emilia, Strings.fairytaleTenebria, Strings.flan, Strings.alencia, Strings.baiken, Strings.basar, Strings.bellona, Strings.celine, Strings.charles, Strings.ervalen, Strings.bombModelKanna, Strings.cecilia, Strings.cermia, Strings.edward, Strings.elphelt, Strings.holidayYufine, Strings.hwayoung, Strings.ambitiousTywin, Strings.belian, Strings.commanderPavel, Strings.spiritEyeCeline, Strings.conquerorLilias, Strings.desertJewelBasar, Strings.faithlessLidica, Strings.apocalypseRavi, Strings.arbiterVildred, Strings.bloodMoonHaste, Strings.briarWitchIseria, Strings.closerCharles, Strings.designerLilibet, Strings.fallenCecilia]
+        
+        let fileName: String = "heroInfo.txt"
+        let directoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+        let newFileUrl = directoryURL!.appendingPathComponent(fileName)
+        let textToAdd = "Help me, Obiwan!"
+        if let fileUpdater = try? FileHandle(forUpdating: newFileUrl) {
+           fileUpdater.seekToEndOfFile()
+           fileUpdater.write(textToAdd.data(using: .utf8)!)
+           fileUpdater.closeFile()
+        }
+        
+        var concatenatedString = ""
+        for hero in allHeros {
+            let currentHero = Constants.availableHeros[hero]!
+            concatenatedString.append(currentHero.name + "}")
+            concatenatedString.append(currentHero.starSign + "}")
+            concatenatedString.append(currentHero.heroClass + "}")
+            concatenatedString.append(currentHero.element + "}")
+            concatenatedString.append(currentHero.rarity + "}")
+            for skill in currentHero.skills {
+                concatenatedString.append(skill.skillName + "}")
+                concatenatedString.append(skill.description + "}")
+                concatenatedString.append(String(skill.initialCooldown) + "}")
+                concatenatedString.append(skill.soulBurnEffect + "}")
+                concatenatedString.append(String(skill.requiredFullSouls) + "}")
+                for enhancement in skill.skillEnhancementEffects {
+                    concatenatedString.append(enhancement)
+                }
+                concatenatedString.append("}")
+            }
+            concatenatedString.append("\n")
+        }
+        
+        //test
+         do {
+             let dir: URL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last! as URL
+             print(dir)
+             let url = dir.appendingPathComponent("logFile.txt")
+             try concatenatedString.appendLineToURL(fileURL: url as URL)
+             let result = try String(contentsOf: url as URL, encoding: String.Encoding.utf8)
+         }
+         catch {
+             print("Could not write to file")
+         }
+    }
+    
     // Dark mode https://betterprogramming.pub/swiftui-app-theme-switch-241a79574b87
     @Environment(\.colorScheme) private var colorScheme: ColorScheme
     
@@ -163,6 +218,7 @@ struct ContentView: View {
             .onAppear {
                 // Set the default to clear
                 UITableView.appearance().backgroundColor = .clear
+                OutputToFile()
             }
             .sheet(isPresented: $isPresented) {
                 MainPageSheetView(currentItem: $currentItem, currentPageSelection: $currentPageSelection)
@@ -201,3 +257,29 @@ struct ContentView_Previews: PreviewProvider {
         ContentView().preferredColorScheme(.dark)
     }
 }
+
+extension String {
+    func appendLineToURL(fileURL: URL) throws {
+         try (self + "\n").appendToURL(fileURL: fileURL)
+     }
+
+     func appendToURL(fileURL: URL) throws {
+         let data = self.data(using: String.Encoding.utf8)!
+         try data.append(fileURL: fileURL)
+     }
+ }
+
+ extension Data {
+     func append(fileURL: URL) throws {
+         if let fileHandle = FileHandle(forWritingAtPath: fileURL.path) {
+             defer {
+                 fileHandle.closeFile()
+             }
+             fileHandle.seekToEndOfFile()
+             fileHandle.write(self)
+         }
+         else {
+             try write(to: fileURL, options: .atomic)
+         }
+     }
+ }

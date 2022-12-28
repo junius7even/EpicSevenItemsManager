@@ -47,7 +47,7 @@ public enum Strings {
     public static let equivalentExchange = "Equivalent-Exchange"
     public static let illShowYouOurDifference = "I'll-Show-You-Our-Difference"
     public static let illTakeYouOnDescription = "Attacks the enemy with a transmuted blade, and grants a barrier to the caster for 1 turn. Damage dealt and barrier strength increase proportional to the caster's max Health."
-    public static let equivalentExchangeDescription = "After being attacked, when the caster has a debuff, dispels one debuff and activates Rise!. Rise!: Attacks all enemies with ground thorns, dispelling one buff and inflicting a random debuff for 2 turns, before increasing Combat Readiness of the caster by 20%. Damage dealt increases proportional to the caster's max Health.\n(Random Debuff: Decreased Hit Chance, Decreased Attack, Provoke, Silence, Restrict)"
+    public static let equivalentExchangeDescription = "After being attacked, when the caster has a debuff, dispels one debuff and activates Rise!. Rise!: Attacks all enemies with ground thorns, dispelling one buff and inflicting a random debuff for 2 turns, before increasing Combat Readiness of the caster by 20%. Damage dealt increases proportional to the caster's max Health.(Random Debuff: Decreased Hit Chance, Decreased Attack, Provoke, Silence, Restrict)"
     public static let illShowYouOurDifferenceDescription = "Attacks the enemy together with Alphonse, and increases Combat Readiness of the caster by 50%. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored. Damage dealt increases proportional to the caster's max Health. Damage dealt increases every time this skill is used and can stack up to 3 times."
     // Elphelt
     public static let elphelt = "Elphelt"
