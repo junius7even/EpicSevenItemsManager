@@ -50,6 +50,21 @@ struct HeroDetailView: View {
                             }
                         }
                 }
+                HStack{
+                    Spacer()
+                    NavigationLink(destination: ScoreCalculationView(hero: hero)) {
+//                        Button {
+//
+//                        } label: {
+                            Text("Gear Calculator")
+                                .foregroundColor(Color.white)
+                                .frame(width: 160, height: 25)
+                                .background(Color.blue)
+                                .cornerRadius(15)
+//                        }
+                    }
+                    Spacer()
+                }
                 Rectangle()
                     .fill(Color.secondary)
                     .frame(width: UIScreen.main.bounds.size.width - 32, height: 2, alignment: .center)
