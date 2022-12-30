@@ -453,4 +453,23 @@ public enum Strings {
     // MARK: Material names
     public static let molagora = "Molagora"
     public static let molagoraDescription = "Molagora is a skill enhancement material used to upgrade skill levels.\n\nThis can be obtained via:\n1. the Forest of Souls\n2. Arena exchange\n3. Mission rewards\n4. Special events"
+    
+    // MARK: Equipment & Stat Names
+    public static let weapon = "Weapon"
+    public static let helmet = "Helmet"
+    public static let armor = "Armor"
+    public static let necklace = "Necklace"
+    public static let ring = "Ring"
+    public static let boot = "Boot"
+    public static let attack = "Attack"
+    public static let attackPercent = "Attack%"
+    public static let health = "Health"
+    public static let healthPercent = "Health%"
+    public static let defense = "Defense"
+    public static let defensePercent = "Defense%"
+    public static let speed = "Speed"
+    public static let criticalHitChance = "Critical Hit Chance"
+    public static let criticalHitDamage = "Critical Hit Damage"
+    public static let effectiveness = "Effectiveness"
+    public static let effectResistance = "Effect Resistance"
 }
