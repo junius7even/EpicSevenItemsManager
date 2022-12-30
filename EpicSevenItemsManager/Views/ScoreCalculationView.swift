@@ -9,27 +9,56 @@ import SwiftUI
 
 struct ScoreCalculationView: View {
     var hero: Hero
+//    let colors = ["Red", "Green", "Blue", "Black", "Tartan"]
+//    @State private var selection = "Red"
+    @State var isPresented: Bool = false
+    @State var currentGear: Equipment = Weapon()
+
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 8) {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
                     // Display the item
-                    ForEach(0..<6) {i in
+                    ForEach(hero.gears) {gear in
                         Button {
-                            
+                            currentGear = gear
+                            isPresented.toggle()
                         } label: {
-                            HStack{
+                            if isLeftGear(gear: gear) {
+                                HStack {
+                                    Image(hero.name + "-icon")
+                                        .resizable()
+                                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
+                                        ForEach(0..<4) { i in
+                                            HStack {
+                                                Image(gear.subStatsType[i])
+                                                Text(String(gear.subStatsValue[i]))
+                                            }
+                                        }
+                                    }
+                                }
+                            } else {
+                                HStack {
+                                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
+                                        ForEach(0..<4) { i in
+                                            HStack {
+                                                Image(gear.subStatsType[i])
+                                                Text(String(gear.subStatsValue[i]))
+                                            }
+                                        }
+                                    }
+                                }
                                 Image(hero.name + "-icon")
-                                
+                                    .resizable()
                             }
                         }
+                            .background(Color.gray.opacity(0.7))
+                            .cornerRadius(15)
+                            .padding(10)
                     }
-//                    Image(hero.name + "-icon")
-//                    Image(hero.name + "-icon")
-//                    Image(hero.name + "-icon")
-//                    Image(hero.name + "-icon")
-//                    Image(hero.name + "-icon")
-//                    Image(hero.name + "-icon")
+                }
+                .sheet(isPresented: $isPresented) {
+                    InputEquipmentStatPage(gear: $currentGear)
                 }
                 .background(
                     getSafeImage(named: hero.name)
@@ -40,6 +69,17 @@ struct ScoreCalculationView: View {
                             height: UIScreen.main.bounds.size.height * 5/9
                         )
                 )
+                Spacer()
+                Rectangle()
+                    .fill(Color(UIColor.systemGray3))
+                    .frame(width: UIScreen.main.bounds.size.width, height: 2, alignment: .center)
+//                Picker("Select a paint color", selection: $selection) {
+//                                ForEach(colors, id: \.self) {
+//                                    Text($0)
+//                                }
+//                            }
+//                            .pickerStyle(.menu)
+//                Text("Selected color: \(selection)")
             }
             Spacer()
         }
@@ -54,6 +94,18 @@ public extension View {
     func getSafeImage(named: String) -> Image {
        let uiImage =  (UIImage(named: named + "2") ?? UIImage(named: named))!
        return Image(uiImage: uiImage)
+    }
+    
+    func isLeftGear(gear: Equipment) -> Bool {
+        if gear.gearType == Strings.weapon {
+            return true
+        } else if gear.gearType == Strings.helmet {
+            return true
+        } else if gear.gearType == Strings.armor {
+            return true
+        } else {
+            return false
+        }
     }
 }
 
