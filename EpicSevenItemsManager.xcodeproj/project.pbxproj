@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53053EAB295E3DA200A03ED0 /* EquipmentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53053EAA295E3DA200A03ED0 /* EquipmentCollection.swift */; };
+		53053EAD295E78F200A03ED0 /* InputEquipmentStatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53053EAC295E78F200A03ED0 /* InputEquipmentStatPage.swift */; };
 		536BBC29295BA33600C07967 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 536BBC28295BA33600C07967 /* Realm */; };
 		536BBC2B295BA33600C07967 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 536BBC2A295BA33600C07967 /* RealmSwift */; };
 		5372996D295BF160009F6992 /* ScoreCalculationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372996C295BF160009F6992 /* ScoreCalculationView.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53053EAA295E3DA200A03ED0 /* EquipmentCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentCollection.swift; sourceTree = "<group>"; };
+		53053EAC295E78F200A03ED0 /* InputEquipmentStatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputEquipmentStatPage.swift; sourceTree = "<group>"; };
 		5372996C295BF160009F6992 /* ScoreCalculationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCalculationView.swift; sourceTree = "<group>"; };
 		5372996E295BF71B009F6992 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 		5823443928F154BF00BCC38D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 				587A823228EA49A400BAE18A /* MolagoraPopupPage.swift */,
 				587A823428EA49C100BAE18A /* FarmingLocationsView.swift */,
 				58942D3528EE11F600651A7E /* testView.swift */,
+				53053EAC295E78F200A03ED0 /* InputEquipmentStatPage.swift */,
 			);
 			path = SheetViews;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			children = (
 				58A93B392810710200681E3D /* Constants.swift */,
 				5842CFE22817371F00F19CA6 /* Catalysts.swift */,
+				53053EAA295E3DA200A03ED0 /* EquipmentCollection.swift */,
 				5842CFE42817375100F19CA6 /* StarSigns.swift */,
 				5842CFE62817376400F19CA6 /* HeroClasses.swift */,
 				5842CFE82817377300F19CA6 /* Elements.swift */,
@@ -274,11 +280,13 @@
 				58324577295A6D9B002BBC38 /* Stats.swift in Sources */,
 				58F48290281A2E93006B9F1D /* Hero.swift in Sources */,
 				584208D728E8AB63007EB298 /* Runes.swift in Sources */,
+				53053EAB295E3DA200A03ED0 /* EquipmentCollection.swift in Sources */,
 				58F1ACF528EB824700AD076C /* Awakening.swift in Sources */,
 				58BD67D128EA90D5008F592F /* SkillDetailView.swift in Sources */,
 				5842CFE92817377300F19CA6 /* Elements.swift in Sources */,
 				58FA9D622812250400E6602D /* MainPageSheetView.swift in Sources */,
 				5842CFE72817376400F19CA6 /* HeroClasses.swift in Sources */,
+				53053EAD295E78F200A03ED0 /* InputEquipmentStatPage.swift in Sources */,
 				586F2A152810AD9300972B83 /* HeroDetailView.swift in Sources */,
 				58F1ACF928EC933500AD076C /* HeroCollection.swift in Sources */,
 				5823443A28F154BF00BCC38D /* Strings.swift in Sources */,
