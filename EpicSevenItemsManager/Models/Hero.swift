@@ -16,5 +16,6 @@ public struct Hero {
     public let rarity: String
     public let skills: [Skill]
     public var awakenedStats: Stats? = nil
-    public var gear: Equipment? = nil
+    public var gears = [Weapon(), Necklace(), Helmet(), Ring(), Armor(), Boot()]
+    //[Equipment.Weapon, Equipment.Helmet, Equipment.Armor, Equipment.Necklace, Equipment.Ring, Equipment.Boot]
 }
