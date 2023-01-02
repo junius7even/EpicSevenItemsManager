@@ -472,4 +472,5 @@ public enum Strings {
     public static let criticalHitDamage = "Critical Hit Damage"
     public static let effectiveness = "Effectiveness"
     public static let effectResistance = "Effect Resistance"
+    public static let dualAttackChance = "Dual Attack Chance"
 }

@@ -8,6 +8,5 @@
 import Foundation
 
 public class EquipmentCollection {
-    public static var bombModelKanna = [Weapon(), ]
     
 }

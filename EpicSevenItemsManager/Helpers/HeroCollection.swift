@@ -9,7 +9,7 @@ import Foundation
 
 public enum HeroCollection {
     // MARK: 5 Star Fire Heros
-    public static let bombModelKanna = Hero(name: Strings.bombModelKanna, starSign: StarSigns.gemini, heroClass: HeroClasses.ranger, element: Elements.fire, rarity: "5", skills: [SkillCollection.quickBombardment, SkillCollection.stanceShift, SkillCollection.fullBombardment], awakenedStats: Stats(health: 5299, attack: 1182, defense: 571, speed: 114, dualAttackChance: 5, effectiveness: 18))
+    public static let bombModelKanna = Hero(name: Strings.bombModelKanna, starSign: StarSigns.gemini, heroClass: HeroClasses.ranger, element: Elements.fire, rarity: "5", skills: [SkillCollection.quickBombardment, SkillCollection.stanceShift, SkillCollection.fullBombardment], awakenedStats: Stats(attack: 1182, health: 5299, defense: 571, speed: 114, effectiveness: 18, dualAttackChance: 5))
     public static let cecilia = Hero(name: Strings.cecilia, starSign: StarSigns.aries, heroClass: HeroClasses.knight, element: Elements.fire, rarity: "5", skills: [SkillCollection.deliverance, SkillCollection.steelCloudburst, SkillCollection.ruinousRetribution])
     public static let cermia = Hero(name: Strings.cermia, starSign: StarSigns.leo, heroClass: HeroClasses.warrior, element: Elements.fire, rarity: "5", skills: [SkillCollection.playingWithFire, SkillCollection.hotStreak, SkillCollection.allIn])
     public static let edward = Hero(name: Strings.edward, starSign: StarSigns.aries, heroClass: HeroClasses.warrior, element: Elements.fire, rarity: "5", skills: [SkillCollection.illTakeYouOn, SkillCollection.equivalentExchange, SkillCollection.illShowYouOurDifference])

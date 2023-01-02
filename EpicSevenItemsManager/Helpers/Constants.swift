@@ -218,4 +218,24 @@ public class Constants {
         Elements.light: [Runes.lightRune, Runes.greaterLightRune, Runes.epicLightRune],
         Elements.dark: [Runes.darkRune, Runes.greaterDarkRune, Runes.epicDarkRune]
     ]
+    
+    public static let statsArray: [String] = [
+        Strings.attack, Strings.health, Strings.defense, Strings.speed, Strings.criticalHitChance, Strings.criticalHitDamage, Strings.effectiveness, Strings.effectResistance
+    ]
+    
+    public static let attack: Int = 0
+    public static let health: Int = 1
+    public static let defense: Int = 2
+    public static let speed: Int = 3
+    public static let critChance: Int = 4
+    public static let critDamage: Int = 5
+    public static let effectiveness: Int = 6
+    public static let effectResistance: Int = 7
+    
+    public static let weapon: Int = 0
+    public static let necklace: Int = 1
+    public static let helmet: Int = 2
+    public static let ring: Int = 3
+    public static let armor: Int = 4
+    public static let boot: Int = 5
 }
