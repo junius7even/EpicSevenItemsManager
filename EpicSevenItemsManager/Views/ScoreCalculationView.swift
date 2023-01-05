@@ -15,6 +15,7 @@ struct ScoreCalculationView: View {
     @State private var isPresented: Bool = false
     @State var currentGear = Equipment()
     @State private var targetStats = [0,0,0,0,0,0,0,0]
+    @State private var refresh: Bool = false
     var targetStatsInPercentage: [Int] {
         var result = [0,0,0,0,0,0,0,0]
         // Attack
@@ -118,7 +119,7 @@ struct ScoreCalculationView: View {
                             .padding(10)
                     }
                 }
-                .sheet(isPresented: $isPresented) {
+                .sheet(isPresented: $isPresented, onDismiss: update) {
                     InputEquipmentStatPage(hero: hero, gear: currentGear)
                 }
                 .background(
@@ -130,7 +131,7 @@ struct ScoreCalculationView: View {
                             height: UIScreen.main.bounds.size.height * 5/9
                         )
                 )
-
+                Text(String(refresh))
                 Spacer()
                 Rectangle()
                     .fill(Color(UIColor.systemGray3))
@@ -181,6 +182,10 @@ struct ScoreCalculationView: View {
         }
         .navigationTitle("Gear Calculator")
         //.navigationBarTitleDisplayMode(.inline)
+    }
+    
+    func update() {
+        refresh.toggle()
     }
 }
 
