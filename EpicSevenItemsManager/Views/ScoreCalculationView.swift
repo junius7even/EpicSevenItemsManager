@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ScoreCalculationView: View {
     var hero: Hero
 //    let colors = ["Red", "Green", "Blue", "Black", "Tartan"]
 //    @State private var selection = "Red"
     @State private var isPresented: Bool = false
-    @State private var currentGear: Equipment = Weapon()
+    @State var currentGear = Equipment()
     @State private var targetStats = [0,0,0,0,0,0,0,0]
     var targetStatsInPercentage: [Int] {
         var result = [0,0,0,0,0,0,0,0]
@@ -32,11 +33,9 @@ struct ScoreCalculationView: View {
         result[Constants.speed] = targetStats[Constants.speed] - hero.awakenedStats!.speed - hero.gears[Constants.boot].mainStatValue
         
         // Critical Hit Chance
-        //if targetStats[Constants.critChance] > 100 {targetStats[Constants.critChance] = 100}
         result[Constants.critChance] = targetStats[Constants.critChance] - hero.awakenedStats!.critChance - (hero.gears[Constants.necklace].mainStatType == Strings.criticalHitChance ? hero.gears[Constants.necklace].mainStatValue : 0)
         
         // Critical Hit Damage
-        //if targetStats[Constants.critChance] > 350 {targetStats[Constants.critChance] = 350}
         result[Constants.critDamage] = targetStats[Constants.critDamage] - hero.awakenedStats!.critDamage - (hero.gears[Constants.necklace].mainStatType == Strings.criticalHitDamage ? hero.gears[Constants.necklace].mainStatValue : 0)
         
         // Effectiveness
@@ -59,7 +58,7 @@ struct ScoreCalculationView: View {
     }
     var body: some View {
         ScrollView {
-            LazyVStack(alignment: .leading, spacing: 8) {
+            LazyVStack(alignment: .leading, spacing: 15) {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
                     // Display the item
                     ForEach(hero.gears) {gear in
@@ -69,14 +68,23 @@ struct ScoreCalculationView: View {
                         } label: {
                             if isLeftGear(gear: gear) {
                                 HStack {
-                                    Image(hero.name + "-icon")
+                                    Image(gear.gearType)
                                         .resizable()
+                                        .frame(width: 90,height: 90)
+                                        .cornerRadius(15)
                                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
                                         ForEach(0..<4) { i in
-                                            HStack {
-                                                Image(gear.subStatsType[i])
+                                            VStack {
+                                                Image(gear.subStatsType[i].replacingOccurrences(of: "%", with: ""))
+                                                    .resizable()
+                                                    .frame(width: 20, height: 20)
+                                                    //.background(Color.black)
                                                 Text(String(gear.subStatsValue[i]))
+                                                    .frame(height: 15)
                                             }
+                                            //.background(Color.gray.opacity(0.8))
+                                            .frame(height: 50)
+                                            .cornerRadius(15)
                                         }
                                     }
                                 }
@@ -84,24 +92,34 @@ struct ScoreCalculationView: View {
                                 HStack {
                                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
                                         ForEach(0..<4) { i in
-                                            HStack {
-                                                Image(gear.subStatsType[i])
+                                            VStack {
+                                                Image(gear.subStatsType[i].replacingOccurrences(of: "%", with: ""))
+                                                    .resizable()
+                                                    .frame(width: 20, height: 20)
+                                                    //.background(Color.black)
                                                 Text(String(gear.subStatsValue[i]))
+                                                    .frame(height: 15)
                                             }
+                                            //.background(Color.gray.opacity(0.8))
+                                            .frame(height: 50)
+                                            .cornerRadius(15)
                                         }
                                     }
+                                    //.padding(4)
                                 }
-                                Image(hero.name + "-icon")
+                                Image(gear.gearType)
                                     .resizable()
+                                    .frame(width: 90,height: 90)
+                                    .cornerRadius(15)
                             }
                         }
-                            .background(Color.gray.opacity(0.5))
+                            .background(Color.gray.opacity(0.7))
                             .cornerRadius(15)
                             .padding(10)
                     }
                 }
                 .sheet(isPresented: $isPresented) {
-                    InputEquipmentStatPage(gear: $currentGear)
+                    InputEquipmentStatPage(hero: hero, gear: currentGear)
                 }
                 .background(
                     getSafeImage(named: hero.name)
@@ -112,17 +130,11 @@ struct ScoreCalculationView: View {
                             height: UIScreen.main.bounds.size.height * 5/9
                         )
                 )
+
                 Spacer()
                 Rectangle()
                     .fill(Color(UIColor.systemGray3))
                     .frame(width: UIScreen.main.bounds.size.width, height: 2, alignment: .center)
-//                Picker("Select a paint color", selection: $selection) {
-//                                ForEach(colors, id: \.self) {
-//                                    Text($0)
-//                                }
-//                            }
-//                            .pickerStyle(.menu)
-//                Text("Selected color: \(selection)")
                 VStack{
                     HStack {
                         Text("Target\nStats")
@@ -146,21 +158,30 @@ struct ScoreCalculationView: View {
                             TextField(Constants.statsArray[i], value: $targetStats[i], formatter: NumberFormatter())
                                 .background(Color.gray.opacity(0.2))
                                 .keyboardType(.numberPad)
+                                .onReceive(Just(targetStats[i])) { currentValue in
+                                    var newValue = currentValue
+                                    if i == Constants.critChance {newValue = (newValue > 100 ? 100 : newValue)}
+                                    else if i == Constants.critDamage {newValue = (newValue > 350 ? 350 : newValue)}
+                                    self.targetStats[i] = newValue
+                                }
                             Text(String(targetStatsInPercentage[i]))
                                 .frame(width: 100)
                             Text(String(stillNeedStatsInPercentage[i]))
                                 .frame(width: 100)
 
                         }
+                        
                     }
                 }
             }
             Spacer()
         }
+        .onTapGesture {
+            self.hideKeyboard()
+        }
         .navigationTitle("Gear Calculator")
         //.navigationBarTitleDisplayMode(.inline)
     }
-    
 }
 
 
@@ -182,8 +203,15 @@ public extension View {
             return false
         }
     }
-    
 }
+// reference: https://medium.com/@realhouseofcode/swiftui-dismiss-keyboard-on-outside-tap-d3d56894813
+#if canImport(UIKit)
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+#endif
 
 struct ScoreCalculationView_Previews: PreviewProvider {
     static var previews: some View {
