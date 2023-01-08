@@ -12,6 +12,7 @@ public enum Strings {
     public static let active = "Active"
     public static let passive = "Passive"
     public static let soulBurn = "Soul Burn"
+    public static let averageGearscoreDescription = "Your average gear score is: "
     
     // Hero names + Skill names + description
     // Skill name --> description + soulburn

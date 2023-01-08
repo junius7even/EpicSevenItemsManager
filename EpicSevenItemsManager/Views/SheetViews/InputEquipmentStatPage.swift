@@ -36,6 +36,7 @@ struct InputEquipmentStatPage: View {
                     .resizable()
                     .frame(width: 100,height: 100)
                     .cornerRadius(15)
+                    .onAppear(perform: {print(gear.gearType)})
                 Text("Main Stat")
                 HStack (spacing: 8) {
                     Picker("Main Stat", selection: $mainStat) {
@@ -44,8 +45,11 @@ struct InputEquipmentStatPage: View {
                         }
                     }
                     .pickerStyle(.menu)
+                    .onReceive([self.mainStat].publisher.first()) { value in
+                        gear.updateMainStatType(statType: value)
+                    }
                     //Text("Stat Value")
-//                    .onReceive(<#_#>) {
+//                    .onReceive() {
                     Text(String(GearMenu.mainValue[mainStat]!))
 //                    }
                     //Text(mainStats, value: subValues[i], formatter: NumberFormatter())
@@ -66,9 +70,17 @@ struct InputEquipmentStatPage: View {
                                     }
                                 }
                                 .pickerStyle(.menu)
+                                .onReceive([self.subStats[i]].publisher.first()) { value in
+                                    gear.updateSubStatsType(statsType: value, index: i)
+                                    gear.updateScore(score: gearScore)
+                                }
                                 Spacer()
                                 TextField(subStats[i], value: $subValues[i], formatter: NumberFormatter())
                                     .keyboardType(.numberPad)
+                                    .onReceive([self.subValues[i]].publisher.first()) { value in
+                                        gear.updateSubStatsValue(statsValue: value, index: i)
+                                        gear.updateScore(score: gearScore)
+                                    }
                                     
                             }
                         }
@@ -76,18 +88,18 @@ struct InputEquipmentStatPage: View {
                     Text("Score: " + String(gearScore))
                         .offset(x: 120)
                 }
-                Button {
-                    gear.updateMainStatType(statType: mainStat)
-                    gear.updateMainStatValue(statValue: mainValue)
-                    gear.updateSubStatsType(statsType: subStats)
-                    gear.updateSubStatsValue(statsValue: subValues)
-                    gear.updateScore(score: gearScore)
-                } label: {
-                    Text("Update")
-                        .frame(width: 100, height: 50)
-                        //.background(Color.black)
-                        .cornerRadius(25)
-                }
+//                Button {
+//                    gear.updateMainStatType(statType: mainStat)
+//                    gear.updateMainStatValue(statValue: mainValue)
+//                    gear.updateSubStatsType(statsType: subStats)
+//                    gear.updateSubStatsValue(statsValue: subValues)
+//                    gear.updateScore(score: gearScore)
+//                } label: {
+//                    Text("Update")
+//                        .frame(width: 100, height: 50)
+//                        //.background(Color.black)
+//                        .cornerRadius(25)
+//                }
                 Spacer()
             }
         }
@@ -96,6 +108,13 @@ struct InputEquipmentStatPage: View {
             subStats = gear.subStatsType
             subValues = gear.subStatsValue
         }
+//        .onDisappear {
+//            gear.updateMainStatType(statType: mainStat)
+//            gear.updateMainStatValue(statValue: mainValue)
+//            gear.updateSubStatsType(statsType: subStats)
+//            gear.updateSubStatsValue(statsValue: subValues)
+//            gear.updateScore(score: gearScore)
+//        }
         .onTapGesture {
             self.hideKeyboard()
         }

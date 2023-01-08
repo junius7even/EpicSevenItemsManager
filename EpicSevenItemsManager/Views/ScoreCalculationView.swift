@@ -13,7 +13,7 @@ struct ScoreCalculationView: View {
 //    let colors = ["Red", "Green", "Blue", "Black", "Tartan"]
 //    @State private var selection = "Red"
     @State private var isPresented: Bool = false
-    @State var currentGear = Equipment()
+    private static var currentGear = Equipment()
     @State private var targetStats = [0,0,0,0,0,0,0,0]
     @State private var refresh: Bool = false
     var targetStatsInPercentage: [Int] {
@@ -57,16 +57,22 @@ struct ScoreCalculationView: View {
         
         return result
     }
+    
+    
+    
+    @State var avgGearScore: Double = 0
+    
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 15) {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
                     // Display the item
                     ForEach(hero.gears) {gear in
-                        Button {
-                            currentGear = gear
+                        //currentGear = gear
+                        Button (action: {
+                            ScoreCalculationView.currentGear = gear
                             isPresented.toggle()
-                        } label: {
+                        }, label: {
                             if isLeftGear(gear: gear) {
                                 HStack {
                                     Image(gear.gearType)
@@ -113,14 +119,31 @@ struct ScoreCalculationView: View {
                                     .frame(width: 90,height: 90)
                                     .cornerRadius(15)
                             }
-                        }
+                        })
                             .background(Color.gray.opacity(0.7))
                             .cornerRadius(15)
                             .padding(10)
+//                            .simultaneousGesture(
+//                                DragGesture(minimumDistance: 0)
+//                                    .onChanged({_ in
+//                                        ScoreCalculationView.currentGear = gear
+//                                        print(ScoreCalculationView.currentGear.gearType)
+//                                    })
+//                                    .onEnded({_ in
+//                                        print("released")
+//                                        isPresented.toggle()
+//                                    })
+//                            )
                     }
                 }
-                .sheet(isPresented: $isPresented, onDismiss: update) {
-                    InputEquipmentStatPage(hero: hero, gear: currentGear)
+                .sheet(isPresented: $isPresented, onDismiss: {
+                    var sum = 0.0
+                    for gear in hero.gears {
+                        sum += gear.score
+                    }
+                    avgGearScore = round(sum/6*100)/100.0
+                }) {
+                    InputEquipmentStatPage(hero: hero, gear: ScoreCalculationView.currentGear)
                 }
                 .background(
                     getSafeImage(named: hero.name)
@@ -131,7 +154,7 @@ struct ScoreCalculationView: View {
                             height: UIScreen.main.bounds.size.height * 5/9
                         )
                 )
-                Text(String(refresh))
+                Text(Strings.averageGearscoreDescription + String(avgGearScore))
                 Spacer()
                 Rectangle()
                     .fill(Color(UIColor.systemGray3))

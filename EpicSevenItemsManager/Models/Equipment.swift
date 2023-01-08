@@ -27,8 +27,16 @@ public class Equipment: Identifiable, ObservableObject {
         self.subStatsType = statsType
     }
     
+    public func updateSubStatsType(statsType: String, index: Int) {
+        self.subStatsType[index] = statsType
+    }
+    
     func updateSubStatsValue(statsValue: [Int]) {
         self.subStatsValue = statsValue
+    }
+    
+    func updateSubStatsValue(statsValue: Int, index: Int) {
+        self.subStatsValue[index] = statsValue
     }
     
     func updateScore(score: Double) {
