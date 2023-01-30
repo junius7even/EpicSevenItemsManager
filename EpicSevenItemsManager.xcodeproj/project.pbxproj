@@ -14,6 +14,7 @@
 		5372996D295BF160009F6992 /* ScoreCalculationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372996C295BF160009F6992 /* ScoreCalculationView.swift */; };
 		5372996F295BF71B009F6992 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372996E295BF71B009F6992 /* Equipment.swift */; };
 		5823443A28F154BF00BCC38D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5823443928F154BF00BCC38D /* Strings.swift */; };
+		5831A0EA298719B800B8927A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5831A0E9298719B800B8927A /* HomeView.swift */; };
 		58324577295A6D9B002BBC38 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58324576295A6D9B002BBC38 /* Stats.swift */; };
 		584208D728E8AB63007EB298 /* Runes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584208D628E8AB63007EB298 /* Runes.swift */; };
 		5842CFE32817371F00F19CA6 /* Catalysts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5842CFE22817371F00F19CA6 /* Catalysts.swift */; };
@@ -47,6 +48,7 @@
 		5372996C295BF160009F6992 /* ScoreCalculationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCalculationView.swift; sourceTree = "<group>"; };
 		5372996E295BF71B009F6992 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 		5823443928F154BF00BCC38D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		5831A0E9298719B800B8927A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		58324576295A6D9B002BBC38 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		584208D628E8AB63007EB298 /* Runes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runes.swift; sourceTree = "<group>"; };
 		5842CFE22817371F00F19CA6 /* Catalysts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalysts.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				586F2A142810AD9300972B83 /* HeroDetailView.swift */,
 				5372996C295BF160009F6992 /* ScoreCalculationView.swift */,
 				58BD67D028EA90D5008F592F /* SkillDetailView.swift */,
+				5831A0E9298719B800B8927A /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				5842CFE32817371F00F19CA6 /* Catalysts.swift in Sources */,
 				58A93B3A2810710200681E3D /* Constants.swift in Sources */,
 				5842CFE52817375100F19CA6 /* StarSigns.swift in Sources */,
+				5831A0EA298719B800B8927A /* HomeView.swift in Sources */,
 				587A823128EA498C00BAE18A /* CatalystPopupPage.swift in Sources */,
 				587A822828EA46A000BAE18A /* SkillCollection.swift in Sources */,
 				58F1ACF728EB854900AD076C /* AwakeningMaterials.swift in Sources */,

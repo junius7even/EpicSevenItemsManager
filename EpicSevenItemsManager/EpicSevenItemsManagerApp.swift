@@ -14,7 +14,7 @@ import SwiftUI
 struct EpicSevenItemsManagerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
                 .environment(\.locale, .init(identifier: "ca-EN"))
         }
     }
